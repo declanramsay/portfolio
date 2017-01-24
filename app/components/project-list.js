@@ -10,7 +10,7 @@ const PROJECTS_DATA = [
     title: 'TVNZ Single Site',
     link: 'http://www.tvnz.co.nz/shows/my-kitchen-rules-australia',
     image: {
-      src: 'assets/images/tvnz-single-site.png',
+      src: 'assets/images/debate-thumb.jpg',
       alt: 'TVNZ Single Site',
     },
     summary: 'testing',
@@ -22,6 +22,10 @@ const PROJECTS_DATA = [
     id: 'the-co-operative-bank',
     title: 'The Co-operative Bank',
     link: 'https://www.co-operativebank.co.nz',
+    image: {
+      src: 'assets/images/debate-thumb.jpg',
+      alt: 'The Co-operative Bank',
+    },
     summary: '',
     tags: [],
     date: '',
@@ -30,7 +34,10 @@ const PROJECTS_DATA = [
   {
     id: 'lucid-effect-national-tour',
     title: 'Lucid Effect National Tour',
-    image: '',
+    image: {
+      src: 'assets/images/debate-thumb.jpg',
+      alt: 'National Tour',
+    },
     summary: '',
     tags: [],
     date: '',
