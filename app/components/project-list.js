@@ -10,7 +10,7 @@ const PROJECTS_DATA = [
     title: 'TVNZ Single Site',
     link: 'http://www.tvnz.co.nz/shows/my-kitchen-rules-australia',
     image: {
-      src: 'assets/images/debate-thumb.jpg',
+      src: 'assets/images/engagement.jpg',
       alt: 'TVNZ Single Site',
     },
     summary: 'testing',
@@ -23,11 +23,11 @@ const PROJECTS_DATA = [
     title: 'The Co-operative Bank',
     link: 'https://www.co-operativebank.co.nz',
     image: {
-      src: 'assets/images/debate-thumb.jpg',
+      src: 'assets/images/engagement.jpg',
       alt: 'The Co-operative Bank',
     },
     summary: '',
-    tags: [],
+    tags: ['Ember', 'Javascript', 'Web Development'],
     date: '',
     media: [],
   },
@@ -35,16 +35,29 @@ const PROJECTS_DATA = [
     id: 'lucid-effect-national-tour',
     title: 'Lucid Effect National Tour',
     image: {
-      src: 'assets/images/debate-thumb.jpg',
+      src: 'assets/images/engagement.jpg',
       alt: 'National Tour',
     },
     summary: '',
-    tags: [],
+    tags: ['Event Planning', 'Design'],
     date: '',
+    media: [],
+  },
+  {
+    id: 'what-are-you-voting-for',
+    title: 'What Are You Voting For?',
+    image: {
+      src: 'assets/images/engagement.jpg',
+      alt: 'What Are You Voting For',
+    },
+    summary: '',
+    tags: ['Design', 'Event Planning', 'Web Development'],
+    date: 'June 2014 - September 2014',
     media: [],
   },
 ];
 
 export default Component.extend({
   projects: PROJECTS_DATA,
+  classNames: ['row'],
 });

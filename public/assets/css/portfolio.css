@@ -1,0 +1,13 @@
+/**, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}*/
+
+body {
+  background: url('../images/square_bg.png');
+}
+
+.responsive {
+  width: 100%;
+}
