@@ -1,11 +1,9 @@
-/**, html {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}*/
+html {
+  border-top: 15px solid #8016ac;
+}
 
 body {
-  background: url('../images/square_bg.png');
+  background: url('../images/square_bg.png') #eee;
 }
 
 .responsive {
