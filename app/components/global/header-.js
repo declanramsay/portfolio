@@ -6,5 +6,5 @@ const {
 
 export default Component.extend({
   tagName: 'div',
-  classNames: 'Header',
+  classNames: 'Header row',
 });

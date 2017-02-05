@@ -6,12 +6,12 @@ const {
 
 const PROJECTS_DATA = [
   {
-    id: 'tvnz-single-site',
-    title: 'TVNZ Single Site',
-    link: 'http://www.tvnz.co.nz/shows/my-kitchen-rules-australia',
+    id: 'media-project',
+    title: 'Media Project',
+    // link: 'http://www.tvnz.co.nz/shows/my-kitchen-rules-australia',
     image: {
       src: 'assets/images/engagement.jpg',
-      alt: 'TVNZ Single Site',
+      alt: 'media-project',
     },
     summary: 'testing',
     tags: ['Ember', 'JavaScript', 'Web Development'],

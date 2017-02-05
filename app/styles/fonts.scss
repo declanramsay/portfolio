@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'sanchezregular';
+    src: url('./fonts/Sanchez-Regular-webfont.eot');
+    src: url('./fonts/Sanchez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/Sanchez-Regular-webfont.woff') format('woff'),
+         url('./fonts/Sanchez-Regular-webfont.ttf') format('truetype'),
+         url('./fonts/Sanchez-Regular-webfont.svg#sanchezregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'uni_sansheavy_caps';
+    src: url('./fonts/uni_sans_heavy-webfont.eot');
+    src: url('./fonts/uni_sans_heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('./fonts/uni_sans_heavy-webfont.woff') format('woff'),
+         url('./fonts/uni_sans_heavy-webfont.ttf') format('truetype'),
+         url('./fonts/uni_sans_heavy-webfont.svg#uni_sansheavy_caps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
