@@ -4,7 +4,7 @@
     <p>
       I've been listening to
       {{#each tracks as |t|}}
-      {{t.name}} by {{t.artist}},
+        {{#if t.isLast}} and {{/if}}{{t.name}} by {{t.artist}}{{#unless t.isLast}},{{/unless}}
       {{/each}}
     </p>
   </div>

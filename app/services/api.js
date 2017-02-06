@@ -6,6 +6,8 @@ const {
 } = Ember;
 
 export default Service.extend({
+  // TODO error cases
+
   fetch(id) {
     return fetch(id)
       .then((response) => {
