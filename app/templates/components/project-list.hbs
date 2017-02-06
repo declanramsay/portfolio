@@ -1,9 +1,13 @@
-{{#each projects as |project|}}
+<h2>Projects</h2>
+
+<div class="row">
+  {{#each projects as |project|}}
   <div class="col-sm-4">
     {{#link-to 'project' project.id}}
-      <img src={{project.image.src}} alt={{project.image.alt}} class="responsive">
-      <h4>{{project.title}}</h4>
-      <p>{{project.description}}</p>
+    <img src={{project.image.src}} alt={{project.image.alt}} class="responsive">
+    <h4>{{project.title}}</h4>
+    <p>{{project.description}}</p>
     {{/link-to}}
   </div>
-{{/each}}
+  {{/each}}
+</div>

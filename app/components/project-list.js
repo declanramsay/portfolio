@@ -59,5 +59,5 @@ const PROJECTS_DATA = [
 
 export default Component.extend({
   projects: PROJECTS_DATA,
-  classNames: ['row'],
+  // classNames: ['row'],
 });

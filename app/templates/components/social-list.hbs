@@ -1,1 +1,19 @@
-{{yield}}
+<div class="row">
+  <div class="col-sm-4">
+    <h3>Listening To</h3>
+    <p>
+      I've been listening to
+      {{#each tracks as |t|}}
+      {{t.name}} by {{t.artist}},
+      {{/each}}
+    </p>
+  </div>
+
+  <div class="col-sm-4">
+    <h3>Tweeting</h3>
+  </div>
+
+  <div class="col-sm-4">
+    <h3>Reading</h3>
+  </div>
+</div>
