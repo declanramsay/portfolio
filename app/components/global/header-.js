@@ -7,8 +7,6 @@ const {
 
 export default Component.extend({
   tagName: 'div',
-  // classNames: 'Header row',
-
   didInsertElement() {
     let _this = this;
     let header = this.$('.Header--headroom').get(0);
@@ -17,8 +15,6 @@ export default Component.extend({
       offset: 250,
       classes: {
         initial: 'hidden',
-        // unpinned: 'headroom--pinned',
-        // top: 'hidden',
       },
       onUnpin() {
         _this.$('.Header--headroom').removeClass('hidden');
@@ -28,7 +24,7 @@ export default Component.extend({
         _this.$('.Header--headroom').addClass('hidden');
       },
     });
-    // initialise
+
     headroom.init();
   },
 });
