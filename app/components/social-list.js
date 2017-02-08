@@ -8,6 +8,11 @@ const {
 } = Ember;
 
 export default Component.extend({
+  // attrs
+  run: null,
+  reading: null,
+  recentTracks: null,
+
   tracks: computed('recentTracks', function() {
     let { track } = get(this, 'recentTracks');
 
