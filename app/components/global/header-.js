@@ -3,6 +3,7 @@ import Headroom from 'headroom';
 
 const {
   Component,
+  run: { later },
 } = Ember;
 
 export default Component.extend({
@@ -12,7 +13,7 @@ export default Component.extend({
     let header = this.$('.Header--headroom').get(0);
 
     let headroom  = new Headroom(header, {
-      offset: 250,
+      offset: 220,
       classes: {
         initial: 'hidden',
       },
@@ -21,7 +22,9 @@ export default Component.extend({
       },
 
       onTop() {
-        _this.$('.Header--headroom').addClass('hidden');
+        later(() => {
+          _this.$('.Header--headroom').addClass('hidden');
+        }, 200);
       },
     });
 

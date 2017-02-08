@@ -40,6 +40,10 @@ body {
 .headroom--pinned {
     transform: translateY(0%);
 }
+
+.headroom--top {
+    transform: translateY(-100%);
+}
 .headroom--unpinned {
     transform: translateY(-100%);
 }
