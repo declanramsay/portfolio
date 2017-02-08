@@ -22,6 +22,26 @@ body {
   color: white;
   z-index: 20;
 
+  &:before {
+    content: '';
+    position:fixed;
+    height: 70px;
+    width: 100%;
+    background: url('./images/header.jpg') center bottom no-repeat;
+    background-size: cover;
+    opacity: .2;
+  }
+}
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
 }
 
 .Header {

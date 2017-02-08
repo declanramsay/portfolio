@@ -18,7 +18,7 @@ export default Component.extend({
       classes: {
         initial: 'hidden',
         // unpinned: 'headroom--pinned',
-        // top: 'headroom--top hidden',
+        // top: 'hidden',
       },
       onUnpin() {
         _this.$('.Header--headroom').removeClass('hidden');
