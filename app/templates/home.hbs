@@ -1,12 +1,25 @@
-<div class="container">
-  {{global/header-}}
-  {{project-list}}
-
-  {{social-list
-    recentTracks=model.recentTracks
-    run=model.run
-    reading=model.reading
-  }}
+<div class="Header row">
+  <div class="Header--text">
+    <h1>Declan Ramsay</h1>
+    <p>Web developer based in Wellington, New Zealand</p>
+    <ul class="LinkList">
+      <li><a href="https://twitter.com/thelucideffect"><i class="fa fa-twitter fa-lg"></i></a></li>
+      <li><a href="https://github.com/thelucideffect"><i class="fa fa-github fa-lg"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/declandr/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+    </ul>
+  </div>
 </div>
 
-{{global/footer-}}
+<div class="Profile row center-xs">
+  <div class="col-sm-8">
+    <p>Hi, I'm Declan. Developer, Musician, and General Nerd, I'm passionate about all things web. I love building exciting and useful web applications that are beautiful both in form and function.</p>
+  </div>
+</div>
+
+{{project-list}}
+
+{{social-list
+  recentTracks=model.recentTracks
+  run=model.run
+  reading=model.reading
+}}

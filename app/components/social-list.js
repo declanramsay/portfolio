@@ -4,7 +4,6 @@ const {
   Component,
   computed,
   get,
-  // computed: { reads },
 } = Ember;
 
 export default Component.extend({
