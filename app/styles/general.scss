@@ -69,20 +69,21 @@ body {
     transform: translateY(0%);
 }
 
-.headroom--top {
-    transform: translateY(-100%);
-    box-shadow: none;
-}
+// .headroom--top {
+//     transform: translateY(-100%);
+//     box-shadow: none;
+// }
 .headroom--unpinned {
     transform: translateY(-100%);
     box-shadow: none;
 }
 
 .Header {
-  background: linear-gradient(45deg,#8016ac,#bd1b99);
+  // background: linear-gradient(45deg,#8016ac,#bd1b99);
+  background: linear-gradient(45deg,#000,#fff);
   color: #fff;
   height: 300px;
-  margin-top: 0;
+  margin-top: 70px;
   margin-bottom: 24px;
   margin-left: 0rem;
   margin-right: 0rem;
@@ -93,9 +94,9 @@ body {
     position:absolute;
     height: 300px;
     width: 100%;
-    background: url('./images/header.jpg') center bottom no-repeat;
+    background: url('./images/header.jpg') center top no-repeat;
     background-size: cover;
-  	opacity: .2;
+  	opacity: .3;
 
   }
 
@@ -170,7 +171,7 @@ body {
 }
 
 .Profile {
-  font-size: 1.2rem;
+  // font-size: 1.2rem;
 }
 
 .container {

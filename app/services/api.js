@@ -1,6 +1,5 @@
 import Ember from 'ember';
 import fetch from 'fetch';
-// import fetchJsonP from 'npm:fetch-jsonp';
 
 const {
   RSVP: {
@@ -34,15 +33,4 @@ export default Service.extend({
         return error;
       });
   },
-
-  // fetchJsonP(id) {
-  //   return fetchJsonP(id, {
-  //     method: 'GET',
-  //   })
-  //     .then(checkStatus)
-  //     .then((response) => response);
-  //       return response.json()
-  //         .then((json) => json);
-  //     });
-  // },
 });
