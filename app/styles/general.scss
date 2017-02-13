@@ -30,7 +30,7 @@ body {
     width: 100%;
     background: url('./images/header.jpg') center bottom no-repeat;
     background-size: cover;
-    opacity: .2;
+    opacity: .1;
   }
 
   h1 {
@@ -183,4 +183,9 @@ body {
 
 .responsive {
   width: 100%;
+}
+
+.responsive--max {
+  width: auto;
+  max-width: 100%;
 }
