@@ -21,6 +21,7 @@ export default Route.extend({
     let api = get(this, 'api');
 
     let hashOfPromises = {
+      // TODO move to service (don't hold up site for)
       recentTracks: api.fetch(LASTFM_ENDPOINT).then((response) => response.recenttracks),
       run: api.fetch(ZOMBIESRUN_ENDPOINT).then((response) => response),
     };
