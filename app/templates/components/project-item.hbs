@@ -7,7 +7,7 @@
   </div>
 
   <div class="col-sm-5">
-    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" style="padding-bottom: 15px;">
+    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" style="padding-bottom: 15px;" data-image-id={{project.id}}>
 
     <div class="row">
       {{#each project.images as |image|}}
