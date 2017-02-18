@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: url('./images/sayagata-400px.png') #eee;
+  background: url('./images/sayagata-400px.png') #fff;
   margin: 0;
 }
 
@@ -96,8 +96,7 @@ body {
     width: 100%;
     background: url('./images/header.jpg') center top no-repeat;
     background-size: cover;
-  	opacity: .3;
-
+  	opacity: .2;
   }
 
   h1 {
@@ -192,4 +191,52 @@ body {
 .responsive--max {
   width: auto;
   max-width: 100%;
+}
+
+.Project--tile {
+  // border: 1px solid black;
+
+  margin-bottom: 10px;
+  padding: 10px auto;
+
+  h4 {
+    margin: 10px auto;
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .Project--summary {
+    background: #fff;
+    z-index: 10;
+    transform: translateY(0%);
+    transition: 1s ease;
+
+    .tags {
+      transition: 1s ease;
+      opacity: 0;
+    }
+
+    &:hover {
+      transform: translateY(-100%);
+
+      .tags {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tag {
+  background: #8016ac;
+  display: inline-block;
+  border-radius: 20px;
+  color: #fff;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 0.4rem;
+  padding: 5px 10px;
 }

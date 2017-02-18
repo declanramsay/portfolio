@@ -35,7 +35,7 @@ const PROJECTS_DATA = [
     id: 'lucid-effect-national-tour',
     title: 'Lucid Effect National Tour',
     image: {
-      src: '../assets/images/engagement.jpg',
+      src: '../assets/images/national-tour-auckland.jpg',
       alt: 'National Tour',
     },
     summary: '',

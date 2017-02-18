@@ -3,9 +3,10 @@ export default function() {
     this.fromRoute('home'),
     this.use('explode', {
       matchBy: 'data-image-id',
-      use: ['fly-to', { duration: 600, easing: 'easeOutQuart' }],
+      use: ['fly-to', { duration: 500 }],
+      // use: ['fly-to', { duration: 1000, easing: 'easeOutQuart' }],
     }, {
-      use: ['fade', { duration: 300 }],
+      use: ['fade', { duration: 500 }],
     }),
     this.reverse('fade')
   );

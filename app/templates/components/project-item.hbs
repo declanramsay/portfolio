@@ -9,9 +9,9 @@
   <div class="col-sm-5">
     <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" style="padding-bottom: 15px;" data-image-id={{project.id}}>
 
-    <div class="row">
+    <div style="columns: 2;">
       {{#each project.images as |image|}}
-        <div class="col-xs-6">
+        <div>
           <img src={{image.src}} alt={{image.alt}} class="responsive">
         </div>
       {{/each}}
