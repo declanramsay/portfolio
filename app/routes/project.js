@@ -32,7 +32,6 @@ const MOCK_ITEM = {
   summary: '',
   tags: ['Event Planning', 'Design'],
   date: 'August 2016',
-  media: [],
 };
 
 export default Route.extend({

@@ -1,7 +1,13 @@
 # portfolio
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+My personal portfolio, currently under construction.
+
+## Tools Used
+
+* Atom
+* OhMyZsh
+* Github
+* [Trello](https://trello.com/b/0D8PbsBb/portfolio-site)
 
 ## Prerequisites
 
