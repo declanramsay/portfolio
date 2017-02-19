@@ -3,15 +3,20 @@
 {{#liquid-bind projects as |projectItems|}}
   <div class="row Project--list">
     {{#each projectItems as |project|}}
-      <div class="col-sm-4  Project--tile">
+      <div class="col-sm-4">
         {{#link-to 'project' project.id}}
-          <img src={{project.image.src}} alt={{project.image.alt}} data-image-id={{project.id}} class="responsive">
-          <div class="Project--summary">
-            <h4>{{project.title}}</h4>
-            <div class="tags">
-              {{#each project.tags as |tag|}}
+          <div class="Project--tile">
+            <div class="Project--image">
+              <img src={{project.image.src}} alt={{project.image.alt}} data-image-id={{project.id}} class="responsive">
+            </div>
+
+            <div class="Project--summary">
+              <h4>{{project.title}}</h4>
+              <div class="tags">
+                {{#each project.tags as |tag|}}
                 <span class="tag">{{tag}}</span>
-              {{/each}}
+                {{/each}}
+              </div>
             </div>
           </div>
         {{/link-to}}
