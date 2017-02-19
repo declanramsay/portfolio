@@ -1,9 +1,31 @@
 <div class="row Page--top">
   <div class="col-sm-7">
     <h3 style="margin-top: 0; margin-bottom: 5px;">Projects / {{project.title}}</h3>
-    <p style="margin-top: 0;"><em>{{project.date}}</em></p>
+    <p style="margin-top: 0;">
+      <em>{{project.date}}</em>
+    </p>
 
-    <p>{{project.summary}}</p>
+
+    {{{project.description}}}
+
+    {{#if project.links}}
+      <p>Links:</p>
+      <ul>
+        {{#each project.links as |link|}}
+          <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
+        {{/each}}
+      </ul>
+    {{/if}}
+
+    <p>Skills:
+      {{#each project.skills as |skill|}}{{skill}}, {{/each}}
+    </p>
+
+    <div class="tags">
+      {{#each project.tags as |tag|}}
+      <span class="tag">{{tag}}</span>
+      {{/each}}
+    </div>
   </div>
 
   <div class="col-sm-5">
