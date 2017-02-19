@@ -52,3 +52,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 60em) {
+  .Project--tile {
+    &:after {
+      opacity: .3 !important;
+
+    }
+    .Project--summary {
+      opacity: 1 !important;
+    }
+  }
+}
