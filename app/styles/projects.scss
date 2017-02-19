@@ -5,8 +5,8 @@
   transition: all 1s ease;
 
   .tag {
-    color: #8016ac;
-    background: #fff;
+    color: $purple;
+    background: $white;
   }
 
   .Project--summary {
@@ -21,7 +21,7 @@
     transition: all 1s ease;
 
     h4 {
-      color: #fff;
+      color: $white;
       z-index: 10;
       text-align: center;
       font-size: 1.25rem;
@@ -36,7 +36,7 @@
     width: 100%;
     height: calc(100% - 5px);
     top: 0;
-    background: #8016ac;
+    background: $purple;
     opacity: 0;
     transition: all 1s ease;
     z-index: 1;
