@@ -17,9 +17,17 @@
       </ul>
     {{/if}}
 
-    <p>Skills:
+    <p>
+      Skills:
       {{#each project.skills as |skill|}}{{skill}}, {{/each}}
     </p>
+
+    {{#if project.technology}}
+      <p>
+        Technologies used:
+        {{#each project.technology as |technology|}}{{technology}}, {{/each}}
+      </p>
+    {{/if}}
 
     <div class="tags">
       {{#each project.tags as |tag|}}
