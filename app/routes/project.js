@@ -29,7 +29,7 @@ const MOCK_ITEM = {
       alt: 'National Tour',
     },
   ],
-  summary: '',
+  description: '',
   tags: ['Event Planning', 'Design'],
   date: 'August 2016',
 };
