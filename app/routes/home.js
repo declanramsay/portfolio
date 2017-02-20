@@ -123,7 +123,24 @@ const PROJECTS_DATA = [
     description: '<p>Both for myself and for events I\'ve organised, I have designed posters for shows since 2010.</p>',
     tags: ['Design'],
     date: 'Ongoing',
-    images: [],
+    images: [
+      {
+        src: '../assets/images/poster-design-folk.jpg',
+        alt: '',
+      },
+      {
+        src: '../assets/images/poster-design-april-fish.jpg',
+        alt: '',
+      },
+      {
+        src: '../assets/images/poster-design-molly.jpg',
+        alt: '',
+      },
+      {
+        src: '../assets/images/poster-design-lucid.jpg',
+        alt: '',
+      }
+    ],
     skills: ['Creativity', 'Adobe CC'],
   },
 ];
