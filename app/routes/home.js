@@ -80,7 +80,7 @@ const PROJECTS_DATA = [
         alt: 'National Tour',
       },
       {
-        src: '../assets/images/national-tour-lead.jpg',
+        src: '../assets/images/national-tour-posed.jpg',
         alt: 'National Tour',
       },
     ],

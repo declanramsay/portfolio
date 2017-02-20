@@ -33,6 +33,7 @@ body {
 }
 
 .tag {
+  cursor: pointer;
   background: $purple;
   display: inline-block;
   border-radius: 20px;
@@ -41,4 +42,9 @@ body {
   text-transform: uppercase;
   font-size: 0.4rem;
   padding: 5px 10px;
+  transition: background 1s ease;
+
+  &:hover {
+    background: $pink;
+  }
 }

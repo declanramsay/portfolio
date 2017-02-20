@@ -19,7 +19,9 @@
 
     <p>
       Skills:
-      {{#each project.skills as |skill|}}{{skill}}, {{/each}}
+      {{#each project.skills as |skill|}}
+        {{skill}},
+      {{/each}}
     </p>
 
     {{#if project.technology}}
