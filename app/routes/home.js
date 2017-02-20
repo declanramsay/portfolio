@@ -19,15 +19,22 @@ const ZOMBIESRUN_ENDPOINT = 'https://api.zombiesrungame.com/runs/11352204/';
 const PROJECTS_DATA = [
   {
     id: 'media-project',
-    title: 'Media Project',
+    title: 'TVNZ Single Site',
     leadImage: {
       src: '../assets/images/tvnz-tile.jpg',
-      alt: 'media-project',
+      alt: 'TVNZ',
     },
-    description: 'testing',
+    description: '<p>A thorough redesign and build of TVNZ combined their previously built On Demand experience and their seperate show information site in to a single platform. I worked extensively throughout the codebase, particularly on their Authentication and login/register flows, implementing their advertising solution, favouriting, and internal resolution of layout and module information provided by the API.</p> <p>For this project I also lead the team in embracing a style guide enforced by Dockyard\'s ember-suave ruleset. Implementing this style meant we had a consistent codebase which was easier to maintain and introduce other dev\'s to. We also used TDD practices in building the internal layout resolution and Advertising.</p>',
     tags: ['Web Development'],
     date: 'September 2016 - March 2017',
     images: [],
+    links: [
+      {
+        title: 'TVNZ',
+        url: 'https://tvnz.co.nz',
+      },
+    ],
+    skills: ['Ember', 'REST', 'Javascript', 'Git', 'JIRA', 'TDD', 'Styleguide', 'GPT', 'Agile'],
   },
   {
     id: 'the-co-operative-bank',
@@ -37,10 +44,17 @@ const PROJECTS_DATA = [
       src: '../assets/images/co-op-tile.jpg',
       alt: 'The Co-operative Bank',
     },
-    description: '',
+    description: '<p>I was a team member of the development of The Co-operative Bank\'s new online banking platform. Instead of sandboxing the internet banking experience and marketing site, The Co-operative Bank\'s has both on a singular platform, allowing users to see their information without fully logging-in, and to traverse freely between their accounts and offers. This meant that information on the marketing side could be more targetted to their users\' financial situation.</p><p>Working closely with The Co-operative Bank\'s developers I got to experience many aspects of development and I worked on both their initial release and subsequent feature cycles. I eventually stepped up to a more lead-like role on a number of their flows such as Overdraft and Personal Loan origination, as well as the Join Us and Change Account flows.</p>',
     tags: ['Web Development'],
-    date: '',
+    date: 'January 2015 - August 2016',
     images: [],
+    links: [
+      {
+        title: 'The Co-operative Bank Website',
+        url: 'https://co-operativebank.co.nz',
+      },
+    ],
+    skills: ['Ember', 'Sass', 'REST', 'Javascript', 'Git', 'Trello', 'Sifter', 'Agile'],
   },
   {
     id: 'lucid-effect-national-tour',
@@ -93,22 +107,24 @@ const PROJECTS_DATA = [
       src: '../assets/images/engagement.jpg',
       alt: 'What Are You Voting For',
     },
-    description: '',
+    description: '<p>In my capacity as Engagement Vice-President I lead the Engagement team in a series of events around the 2014 New Zealand Election. People aged 24 and under are the least likely to vote and make up the vast majority of the student population. I built a simple website with Wordpress that allowed students to highlight the issues important to them, which became the focus topics of a panel we held on campus with the Tertiary Spokespeople from the major parties. Attendance for this event vastly exceed expectations with over 600 students attending. We also partnered with the Electoral Commission to have an early voting station on campus in the 2 weeks leading up to the election.</p> <p>Ultimately, over 4000 students voted early on campus with an overall increase in Under-24 in Wellington voting from the previous election.</p>',
     tags: ['Design', 'Event Planning', 'Web Development'],
     date: 'June 2014 - September 2014',
     images: [],
+    skills: ['Management', 'Planning', 'Budgeting', 'Wordpress', 'CSS3'],
   },
   {
     id: 'event-poster-design',
     title: 'Event Poster Design',
     leadImage: {
       src: '../assets/images/event-poster-tile.jpg',
-      alt: 'Poster of a hand emerging from a business manʻs neck',
+      alt: 'Poster of dangling lightbulbs',
     },
-    description: '',
+    description: '<p>Both for myself and for events I\'ve organised, I have designed posters for shows since 2010.</p>',
     tags: ['Design'],
     date: 'Ongoing',
     images: [],
+    skills: ['Creativity', 'Adobe CC'],
   },
 ];
 
