@@ -126,19 +126,19 @@ const PROJECTS_DATA = [
     images: [
       {
         src: '../assets/images/poster-design-folk.jpg',
-        alt: '',
+        alt: 'Poster for Folk Against The Machine, an Alternative/Folk evening',
       },
       {
         src: '../assets/images/poster-design-april-fish.jpg',
-        alt: '',
+        alt: 'Poster for Wellington musicians April Fish, Nicole Andrews, and Lucid Effect',
       },
       {
         src: '../assets/images/poster-design-molly.jpg',
-        alt: '',
+        alt: 'Poster featuring the dangling lightbulbs featured at the venue Moon, for Dunedin-based musician Molly Devine',
       },
       {
         src: '../assets/images/poster-design-lucid.jpg',
-        alt: '',
+        alt: 'Poster for Lucid Effect\'s 2015 North Island Tour, featuring fingerprint hot-air balloons',
       }
     ],
     skills: ['Creativity', 'Adobe CC'],
