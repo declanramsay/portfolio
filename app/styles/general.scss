@@ -48,3 +48,19 @@ body {
     background: $pink;
   }
 }
+
+.circle {
+  border-radius: 50%;
+}
+
+h2 {
+  background: $purple;
+  color: $white;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
