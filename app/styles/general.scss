@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: calc(100% - 48px);
+  width: calc(80% - 48px);
 	// max-width: 90%;
   background: $white;
   padding: 24px;
@@ -53,7 +53,6 @@ h2 {
   background: $purple;
   color: $white;
   display: block;
-  width: 100%;
   text-align: center;
   padding: 10px 0px;
   font-weight: normal;
@@ -71,8 +70,10 @@ h2 {
     width: calc(100% - 24px);
     padding: 24px 12px;
   }
+
+
   .row {
-    p, h3, h2 {
+    p, h3, h2, img {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
     }

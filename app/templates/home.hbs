@@ -1,7 +1,7 @@
 <div class="Header row">
   <div class="Header--text">
     <h1>Declan Ramsay</h1>
-    <p>Web developer based in Wellington, New Zealand</p>
+    <p>Web developer and Musician based in Wellington, New Zealand</p>
     <ul class="LinkList">
       <li><a href="https://twitter.com/thelucideffect" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter fa-lg"></i></a></li>
       <li><a href="https://github.com/thelucideffect" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-lg"></i></a></li>
@@ -10,29 +10,31 @@
   </div>
 </div>
 
-<div class="Profile row middle-xs center-xs">
-  <div class="col-xs-2">
-    <img src="assets/images/my-sprite-l.gif" alt="Sprite of Declan" class="responsive--max">
+<div class="container">
+  <div class="Profile row middle-xs center-xs">
+    <div class="col-xs-2">
+      <img src="assets/images/my-sprite-l.gif" alt="Sprite of Declan" class="responsive--max">
+    </div>
+
+    <div class="col-xs-8">
+      <p>Hi, I'm Declan. Developer, Musician, and General Dork, I'm passionate about all things web. I love building exciting and useful web applications that are beautiful both in form and function.</p>
+    </div>
+
+    <div class="col-xs-2">
+      <img src="assets/images/my-sprite.gif" alt="Sprite of Declan" class="responsive--max">
+    </div>
   </div>
 
-  <div class="col-xs-8">
-    <p>Hi, I'm Declan. Developer, Musician, and General Nerd, I'm passionate about all things web. I love building exciting and useful web applications that are beautiful both in form and function.</p>
-  </div>
 
-  <div class="col-xs-2">
-    <img src="assets/images/my-sprite.gif" alt="Sprite of Declan" class="responsive--max">
-  </div>
+  {{project-list
+    projects=model.projects
+  }}
+
+  {{about-me}}
+
+  {{social-list
+    recentTracks=model.recentTracks
+    run=model.run
+    reading=model.reading
+  }}
 </div>
-
-
-{{project-list
-  projects=model.projects
-}}
-
-{{about-me}}
-
-{{social-list
-  recentTracks=model.recentTracks
-  run=model.run
-  reading=model.reading
-}}

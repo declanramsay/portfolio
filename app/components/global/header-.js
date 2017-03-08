@@ -7,6 +7,7 @@ const {
 
 export default Component.extend({
   tagName: 'div',
+  classNames: ['container'],
   didInsertElement() {
     let header = this.$('.Header--headroom').get(0);
 
