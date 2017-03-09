@@ -13,5 +13,17 @@ module.exports = {
   },
   rules: {
     'comma-dangle': ['error', 'always-multiline'],
+    'keyword-spacing': ['error',
+      {
+        'overrides': {
+          'if': {
+            'after': false,
+          },
+          'else': {
+            'after': false,
+          },
+        },
+      },
+    ],
   },
 };
