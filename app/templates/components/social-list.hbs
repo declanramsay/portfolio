@@ -2,12 +2,14 @@
   <div class="col-sm-4">
     <div class="Social--item">
       <h3><i class="fa fa-music" aria-hidden="true"></i> Listening</h3>
-      <p>
-        Lately I've been blasting
-        {{#each tracks as |t|}}
-          {{#if t.isLast}} and{{/if}} <em>{{t.name}}</em> by <strong>{{t.artist}}</strong>{{#unless t.isLast}},{{/unless}}
-        {{/each}}
-      </p>
+      {{#if tracks}}
+        <p>
+          Lately I've been blasting
+          {{#each tracks as |t|}}
+            {{#if t.isLast}} and{{/if}} <em>{{t.name}}</em> by <strong>{{t.artist}}</strong>{{#unless t.isLast}},{{/unless}}
+          {{/each}}
+        </p>
+      {{/if}}
     </div>
   </div>
 
@@ -20,7 +22,9 @@
   <div class="col-sm-4">
     <div class="Social--item">
       <h3><i class="fa fa-heartbeat"></i> Running</h3>
-      <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em> in <a href={{latestRun.link}}>Zombies, Run!</a></p>
+      {{#if latestRun}}
+        <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em> in <a href={{latestRun.link}}>Zombies, Run!</a></p>
+      {{/if}}
     </div>
   </div>
 
