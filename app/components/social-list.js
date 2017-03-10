@@ -20,7 +20,8 @@ export default Component.extend({
       return;
     }
 
-    let { track } = lastfm;
+    let { recenttracks: recentTracks } = lastfm;
+    let { track } = recentTracks;
 
     return track.map((t, i) => {
       let artist = get(t, 'artist.#text');
@@ -47,6 +48,15 @@ export default Component.extend({
     return { time, distance, missionCode, link };
   }),
 
+  latestPhoto: computed('instagram', function() {
+    let instagram = get(this, 'instagram');
+    if(!instagram) {
+      return;
+    }
+
+    return instagram;
+  }),
+
   didInsertElement() {
     this._super(...arguments);
 
@@ -55,19 +65,15 @@ export default Component.extend({
     let hashOfPromises = hash({
       zombies: s.fetch('zombies'),
       lastfm: s.fetch('lastfm'),
+      instagram: s.fetch('instagram', true),
     });
 
     return hashOfPromises
-      .then(({ zombies, lastfm }) => {
-        if(!lastfm || !lastfm.recenttracks) {
-          lastfm = {};
-        }
-
-        let recentTracks = lastfm.recenttracks;
-
+      .then(({ zombies, lastfm, instagram }) => {
         setProperties(this, {
+          instagram,
           zombies,
-          lastfm: recentTracks,
+          lastfm,
         });
       });
   },

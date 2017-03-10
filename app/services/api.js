@@ -1,5 +1,6 @@
 import Ember from 'ember';
 import fetch from 'fetch';
+import fetchJsonp from 'npm:fetch-jsonp';
 
 const {
   RSVP: {
@@ -10,7 +11,7 @@ const {
 } = Ember;
 
 const checkStatus = function(response) {
-  if (response.status >= 200 && response.status < 300) {
+  if(response.status >= 200 && response.status < 300) {
     return resolve(response);
   }
 
@@ -32,5 +33,14 @@ export default Service.extend({
       .catch((error) => {
         return error;
       });
+  },
+
+  fetchJSON(id) {
+    return fetchJsonp(id)
+      .then((response) => {
+        return response.json()
+          .then((json) => json);
+      })
+      .catch((err) => err);
   },
 });
