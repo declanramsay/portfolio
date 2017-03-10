@@ -54,7 +54,12 @@ export default Component.extend({
       return;
     }
 
-    return instagram;
+    let { data: [latestPhoto] } = instagram;
+
+    let { images, link } = latestPhoto;
+
+    let image = images['standard_resolution'];
+    return { image, link };
   }),
 
   didInsertElement() {
