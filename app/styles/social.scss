@@ -1,3 +1,15 @@
+.Social--link {
+  color: $black;
+  text-align: right;
+  font-size: 0.8rem;
+
+  a {
+    color: black;
+    text-decoration: underline;
+    font-style: italic;
+  }
+}
+
 .Social--item {
   display: block;
   background: $pink;
@@ -7,5 +19,12 @@
 
   h3 {
     margin-top: 6px;
+  }
+
+  .Social--link {
+    color: $white;
+    a {
+      color: $white;
+    }
   }
 }

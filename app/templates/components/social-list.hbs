@@ -11,6 +11,10 @@
                 {{#if t.isLast}} and{{/if}} <em>{{t.name}}</em> by <strong>{{t.artist}}</strong>{{#unless t.isLast}},{{/unless}}
               {{/each}}
             </p>
+
+            <div class="Social--link">
+              Via <a href="https://www.last.fm/user/LucidEffective" target="_blank" rel="nofollow noreferrer">Last.fm</a>
+            </div>
           {{/if}}
         </div>
       </div>
@@ -25,7 +29,10 @@
         <div class="Social--item">
           <h3><i class="fa fa-heartbeat" aria-hidden="true"></i> Running</h3>
           {{#if latestRun}}
-            <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em> in <a href={{latestRun.link}}>Zombies, Run!</a></p>
+            <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em></p>
+            <div class="Social--link">
+              Via <a href={{latestRun.link}} target="_blank" rel="nofollow noreferrer">Zombies, Run!</a>
+            </div>
           {{/if}}
         </div>
       </div>
@@ -35,7 +42,9 @@
   <div class="col-sm-4">
       {{#if latestPhoto}}
         <img src={{latestPhoto.image.url}} alt={{latestPhoto.link}} class="responsive">
-        <span class="Social--link"><a href={{latestPhoto.link}} target="_blank" rel="nofollow noreferrer">Instagram</a></span>
+        <div class="Social--link">
+          Via <a href={{latestPhoto.link}} target="_blank" rel="nofollow noreferrer">Instagram</a>
+        </div>
       {{/if}}
   </div>
 
