@@ -1,7 +1,7 @@
-<div class="row">
+<div class="Social row">
   <div class="col-sm-8">
-    <div class="row">
-      <div class="col-sm-6">
+    <div class="row Social">
+      <div class="col-sm-6 responsive">
         <div class="Social--item">
           <h3><i class="fa fa-music" aria-hidden="true"></i> Listening</h3>
           {{#if tracks}}
@@ -19,13 +19,13 @@
         </div>
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 response">
         <div class="Social--item">
           <h3><i class="fa fa-twitter" aria-hidden="true"></i> Tweeting</h3>
         </div>
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 responsive">
         <div class="Social--item">
           <h3><i class="fa fa-github" aria-hidden="true"></i> Coding</h3>
 
@@ -38,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-sm-6">
+      <div class="col-sm-6 responsive">
         <div class="Social--item">
           <h3><i class="fa fa-heartbeat" aria-hidden="true"></i> Running</h3>
           {{#if latestRun}}
@@ -52,13 +52,15 @@
     </div>
   </div>
 
-  <div class="col-sm-4">
+  <div class="col-sm-4 responsive">
+    <div class="Social">
       {{#if latestPhoto}}
         <img src={{latestPhoto.image.url}} alt={{latestPhoto.link}} class="responsive">
         <div class="Social--link">
           Via <a href={{latestPhoto.link}} target="_blank" rel="nofollow noreferrer">Instagram</a>
         </div>
       {{/if}}
+    </div>
   </div>
 
 

@@ -73,9 +73,13 @@ h2 {
 
 
   .row {
-    p, h3, h2, img {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+    p,
+    h3,
+    .Profile,
+    .About,
+    .Social, {
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important;
     }
   }
 }
