@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'npm:moment';
 
 const {
   Component,
@@ -58,8 +59,20 @@ export default Component.extend({
 
     let { images, link } = latestPhoto;
 
-    let image = images['standard_resolution'];
+    let image = images.standard_resolution;
     return { image, link };
+  }),
+
+  latestCommit: computed('github', function() {
+    let github = get(this, 'github');
+    if(!github) {
+      return;
+    }
+
+    let [latest] = github;
+    let { created_at: createdAt, repo: { url, name } } = latest;
+    let time = moment(createdAt).fromNow();
+    return { url, name, time };
   }),
 
   didInsertElement() {
@@ -71,14 +84,16 @@ export default Component.extend({
       zombies: s.fetch('zombies'),
       lastfm: s.fetch('lastfm'),
       instagram: s.fetch('instagram', true),
+      github: s.fetch('github'),
     });
 
     return hashOfPromises
-      .then(({ zombies, lastfm, instagram }) => {
+      .then(({ zombies, lastfm, instagram, github }) => {
         setProperties(this, {
           instagram,
           zombies,
           lastfm,
+          github,
         });
       });
   },

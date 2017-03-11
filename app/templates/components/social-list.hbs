@@ -27,6 +27,19 @@
 
       <div class="col-sm-6">
         <div class="Social--item">
+          <h3><i class="fa fa-github" aria-hidden="true"></i> Coding</h3>
+
+          {{#if latestCommit}}
+            <p>I commited to <a href={{latestCommit.url}} target="_blank" rel="nofollow noreferrer">{{latestCommit.name}}</a> {{latestCommit.time}}</p>
+            <div class="Social--link">
+              Via <a href="https://github.com/thelucideffect" target="_blank" rel="nofollow noreferrer">Github</a>
+            </div>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="Social--item">
           <h3><i class="fa fa-heartbeat" aria-hidden="true"></i> Running</h3>
           {{#if latestRun}}
             <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em></p>

@@ -4,5 +4,7 @@
     "ember": "~2.10.0",
     "ember-cli-shims": "0.1.3",
     "headroom.js": "https://npmcdn.com/headroom.js/bower.zip"
+  },
+  "devDependencies": {
   }
 }
