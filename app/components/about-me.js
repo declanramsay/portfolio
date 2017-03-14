@@ -9,6 +9,7 @@ const skills = [
   {
     label: 'HTML 5',
     isActive: false,
+    description: 'Including Web Storage, File API, and <video>'
   },
   {
     label: 'CSS 3',

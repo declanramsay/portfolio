@@ -13,7 +13,11 @@
         {{#each skills as |s|}}
           <div class="col-xs-6">
             <div class="Skill {{if s.isActive 'is-active'}}" {{action 'toggleSkill' s}}>
-              {{s.label}}
+              {{#unless s.isActive}}
+                <h3>{{s.label}}</h3>
+              {{else}}
+                <p>{{s.description}}</p>
+              {{/unless}}
             </div>
           </div>
         {{/each}}
