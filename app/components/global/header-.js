@@ -1,15 +1,15 @@
 import Ember from 'ember';
+import injectService from 'ember-service/inject';
 
 const {
   Component,
   get,
-  inject: { service },
 } = Ember;
 
 export default Component.extend({
   tagName: 'div',
   classNames: ['container'],
-  fastboot: service(),
+  fastboot: injectService(),
 
   didInsertElement() {
     let isFastBoot = get(this, 'fastboot.isFastBoot');

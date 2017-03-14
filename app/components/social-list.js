@@ -1,17 +1,17 @@
 import Ember from 'ember';
+import injectService from 'ember-service/inject';
 import moment from 'npm:moment';
 
 const {
   Component,
   computed,
   get,
-  inject: { service },
   RSVP: { hash },
   setProperties,
 } = Ember;
 
 export default Component.extend({
-  social: service(),
+  social: injectService(),
   lastfm: null,
   zombies: null,
 

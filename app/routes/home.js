@@ -1,8 +1,8 @@
 import Ember from 'ember';
+import injectService from 'ember-service/inject';
 
 const {
   get,
-  inject: { service },
   Route,
   RSVP: { hash },
 } = Ember;
@@ -10,7 +10,7 @@ const {
 const PROJECT_ENDPOINT = 'https://personal-portfolio-b7670.firebaseio.com/projects.json';
 
 export default Route.extend({
-  api: service(),
+  api: injectService(),
 
   model() {
     let api = get(this, 'api');

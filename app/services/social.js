@@ -1,8 +1,8 @@
 import Ember from 'ember';
+import injectService from 'ember-service/inject';
 
 const {
   get,
-  inject: { service },
   Service,
 } = Ember;
 
@@ -15,7 +15,7 @@ const endpoints = {
 };
 
 export default Service.extend({
-  api: service(),
+  api: injectService(),
 
   fetch(type, useJSONP) {
     let api = get(this, 'api');
