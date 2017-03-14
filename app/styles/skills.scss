@@ -1,0 +1,14 @@
+.Skill {
+  display: block;
+  background: $pink;
+  color: $white;
+  text-align: center;
+  padding: 12px 24px;
+  margin-bottom: 12px;
+  transition: background 1s ease;
+}
+
+.is-active {
+  background: $purple;
+  transition: background 1s ease;
+}

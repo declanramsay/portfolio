@@ -8,7 +8,15 @@
   </div>
 
   <div class="col-sm">
-    <h2>Test</h2>
-    <p>Does this fix it if I add more text you know so it is forced to be wider I'm not sure but I'm about to find out</p>
+    <h2>Skill Set</h2>
+      <div class="row">
+        {{#each skills as |s|}}
+          <div class="col-xs-6">
+            <div class="Skill {{if s.isActive 'is-active'}}" {{action 'toggleSkill' s}}>
+              {{s.label}}
+            </div>
+          </div>
+        {{/each}}
+      </div>
   </div>
 </div>
