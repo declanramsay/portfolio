@@ -1,26 +1,32 @@
 <div class="row">
-  <div class="col-sm About">
+  <div class="col-sm-6 About">
     <h2>About Me</h2>
-    <img src="../assets/images/profile.png" alt="Profile picture of Declan Ramsay" class="responsive">
+    <img src="../assets/images/profile.png" alt="Profile of Declan Ramsay" class="responsive">
     <p>A recent graduate with dual citizenship in the UK and NZ, I have been working as a Web Developer on commercial projects for 2 years. Since leaving university I've gotten to work with some of the biggest names in New Zealand, helping them create beautiful and powerful web apps.</p>
     <p>Outside of work I am passionate about my music, having released 3 EPs, a single and an album, and I have toured NZ in 2015 and 2016. I am also beginning to catch the crossfit bug and love a good run.</p>
     <p>I'm currently based in Wellington New Zealand, but I am looking for new opportunities in the United Kingdom.</p>
   </div>
 
-  <div class="col-sm">
+  <div class="col-sm-6 Skills">
     <h2>Skill Set</h2>
       <div class="row">
         {{#each skills as |s|}}
           <div class="col-xs-6">
-            <div class="Skill {{if s.isActive 'is-active'}}" {{action 'toggleSkill' s}}>
-              {{#unless s.isActive}}
-                <h3>{{s.label}}</h3>
-              {{else}}
-                <p>{{s.description}}</p>
-              {{/unless}}
+            <div class="flip-container {{if s.isActive 'flip'}}" {{action 'toggleSkill' s}}>
+            	<div class="flipper">
+            		<div class="front Skill">
+            			<h3>{{s.label}}</h3>
+            		</div>
+            		<div class="back Skill">
+            			<p>{{s.description}}</p>
+            		</div>
+            	</div>
             </div>
           </div>
         {{/each}}
       </div>
+
+      <p class="m-t-0">All of these skills have been used on commercial projects. For a full breakdown of my Skills, Work Experience and Education, you can <span class="nowrap"><a href="#">download my CV</a>.</span></p>
+
   </div>
 </div>

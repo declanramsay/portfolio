@@ -9,7 +9,7 @@ const skills = [
   {
     label: 'HTML 5',
     isActive: false,
-    description: 'Including Web Storage, File API, and <video>'
+    description: 'Including Web Storage, File API, and <video>',
   },
   {
     label: 'CSS 3',
@@ -22,15 +22,16 @@ const skills = [
   {
     label: 'JavaScript',
     isActive: false,
+    description: 'Including ES2016 ',
   },
   {
     label: 'Ember',
     isActive: false,
   },
-  {
-    label: 'NodeJS',
-    isActive: false,
-  },
+  // {
+  //   label: 'NodeJS',
+  //   isActive: false,
+  // },
   {
     label: 'Responsive Web',
     isActive: false,
