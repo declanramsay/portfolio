@@ -52,6 +52,12 @@
   columns: 2;
 }
 
+.Project-links {
+  list-style: square inside;
+  margin: 0 0 12px;
+  padding: 0 0.5rem;
+}
+
 @media only screen and (max-width: 60em) {
   .Project--tile {
     &:after {

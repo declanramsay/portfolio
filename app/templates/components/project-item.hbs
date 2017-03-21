@@ -1,7 +1,14 @@
 <div class="row reverse">
 
   <div class="col-sm-5 Project">
-    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" style="padding-bottom: 15px;" data-image-id={{project.id}}>
+    <div class="sm-visible">
+      <h3 class="m-t-0" style="margin-bottom: 5px;">Projects / {{project.title}}</h3>
+      <p class="m-t-0">
+        <em>{{project.date}}</em>
+      </p>
+    </div>
+
+    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" data-image-id={{project.id}}>
 
     <div class="sm-hidden">
       {{project-images project=project}}
@@ -9,33 +16,39 @@
   </div>
 
   <div class="col-sm-7 Project">
-    <h3 style="margin-top: 0; margin-bottom: 5px;">Projects / {{project.title}}</h3>
-    <p style="margin-top: 0;">
-      <em>{{project.date}}</em>
-    </p>
 
+    <div class="sm-hidden">
+      <h3 class="m-t-0" style="margin-bottom: 5px;">Projects / {{project.title}}</h3>
+      <p class="m-t-0">
+        <em>{{project.date}}</em>
+      </p>
+    </div>
+
+    <p>
+      <strong>Skills / Technologies:</strong>
+      {{#each skills as |skill index|}}
+        {{#if (equals index lastSkillIndex)}}
+          {{skill}}
+        {{else}}
+          {{skill}},
+        {{/if}}
+      {{/each}}
+    </p>
 
     {{{project.description}}}
 
     {{#if project.links}}
-    <p>Links:</p>
-    <ul>
+    <h4 class="m-b-0">Links:</h4>
+    <ul class="Project-links">
       {{#each project.links as |link|}}
-      <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
+        <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
       {{/each}}
     </ul>
     {{/if}}
 
-    <p>
-      Skills / Technologies:
-      {{#each project.skills as |skill|}}
-      {{skill}},
-      {{/each}}
-    </p>
-
     <div class="tags">
       {{#each project.tags as |tag|}}
-      <span class="tag">{{tag}}</span>
+        <span class="tag">{{tag}}</span>
       {{/each}}
     </div>
 

@@ -67,12 +67,25 @@ h2 {
   margin-top: 12px;
 }
 
+.m-b-0 {
+  margin-bottom: 0;
+}
+
 .nowrap {
   white-space: nowrap;
 }
 
 .sm-visible {
   display: none !important;
+}
+
+a {
+  color: $black-25;
+  transition: color ease .5s;
+
+  &:hover {
+    color: $pink;
+  }
 }
 
 // @TODO investigate better fix for padding issue
@@ -90,6 +103,7 @@ h2 {
   .row {
     p,
     h3,
+    h4,
     .Profile,
     .Social {
       margin-left: 0.5rem !important;
