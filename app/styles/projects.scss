@@ -48,6 +48,10 @@
   }
 }
 
+.Project-images {
+  columns: 2;
+}
+
 @media only screen and (max-width: 60em) {
   .Project--tile {
     &:after {

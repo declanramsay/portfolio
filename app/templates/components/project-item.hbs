@@ -1,5 +1,14 @@
-<div class="row">
-  <div class="col-sm-7">
+<div class="row reverse">
+
+  <div class="col-sm-5 Project">
+    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" style="padding-bottom: 15px;" data-image-id={{project.id}}>
+
+    <div class="sm-hidden">
+      {{project-images project=project}}
+    </div>
+  </div>
+
+  <div class="col-sm-7 Project">
     <h3 style="margin-top: 0; margin-bottom: 5px;">Projects / {{project.title}}</h3>
     <p style="margin-top: 0;">
       <em>{{project.date}}</em>
@@ -9,18 +18,18 @@
     {{{project.description}}}
 
     {{#if project.links}}
-      <p>Links:</p>
-      <ul>
-        {{#each project.links as |link|}}
-          <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
-        {{/each}}
-      </ul>
+    <p>Links:</p>
+    <ul>
+      {{#each project.links as |link|}}
+      <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
+      {{/each}}
+    </ul>
     {{/if}}
 
     <p>
       Skills / Technologies:
       {{#each project.skills as |skill|}}
-        {{skill}},
+      {{skill}},
       {{/each}}
     </p>
 
@@ -29,17 +38,9 @@
       <span class="tag">{{tag}}</span>
       {{/each}}
     </div>
-  </div>
 
-  <div class="col-sm-5">
-    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" style="padding-bottom: 15px;" data-image-id={{project.id}}>
-
-    <div style="columns: 2;">
-      {{#each project.images as |image|}}
-        <div>
-          <img src={{image.src}} alt={{image.alt}} class="responsive">
-        </div>
-      {{/each}}
+    <div class="sm-visible m-t-sm">
+      {{project-images project=project}}
     </div>
   </div>
 </div>

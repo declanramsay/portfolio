@@ -17,7 +17,6 @@ body {
 
 .container {
   width: calc(80% - 48px);
-  background: $white;
   padding: 24px;
 }
 
@@ -64,8 +63,16 @@ h2 {
   margin-top: 0;
 }
 
+.m-t-sm {
+  margin-top: 12px;
+}
+
 .nowrap {
   white-space: nowrap;
+}
+
+.sm-visible {
+  display: none !important;
 }
 
 // @TODO investigate better fix for padding issue
@@ -93,10 +100,19 @@ h2 {
 
 @media only screen and (max-width: 48rem) {
   .row {
+    .Project,
     .About,
     .Skills {
       margin-left: 0.5rem !important;
       margin-right: 0.5rem !important;
     }
+  }
+
+  .sm-visible {
+    display: inherit !important;
+  }
+
+  .sm-hidden {
+    display: none !important;
   }
 }
