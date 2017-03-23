@@ -116,9 +116,8 @@ a {
   }
 }
 
-.Footer-section {
-  min-width: 100%;
-  display: inline-block;
+.Footer-text {
+  padding: 6px 12px 6px 0px;
 }
 
 // @TODO investigate better fix for padding issue
@@ -137,8 +136,10 @@ a {
     p,
     h3,
     h4,
+    ul,
     .Profile,
-    .Social {
+    .Social,
+    .Footer-item {
       margin-left: 0.5rem !important;
       margin-right: 0.5rem !important;
     }
