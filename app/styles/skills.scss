@@ -1,49 +1,9 @@
-// Card flip from https://davidwalsh.name/css-flip
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1000px;
-  position: relative;
-  margin-bottom: 12px;
-}
-
-.flip-container.flip .flipper {
-  transform: rotateX(-180deg);
-}
-
-.flip-container .flipper {
-	transform-origin: 100% 35px; /* half of height */
-}
-
-.flip-container, .front, .back {
+.Skill {
 	width: 100%;
 	height: 70px;
   display: inline-block;
   color: $white;
-  cursor: pointer;
   text-align: center;
-}
-
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-	position: relative;
-}
-
-.front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.front {
   background: $pink;
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateX(0deg);
-}
-
-.back {
-  background: $purple;
-  transform: rotateX(180deg);
+  margin-bottom: 12px;
 }
