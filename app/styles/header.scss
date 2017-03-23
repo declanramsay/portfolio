@@ -32,6 +32,11 @@
   }
 }
 
+.Header-container {
+  @extend .container;
+  margin-top: 11px;
+}
+
 .Header--main {
     display: inline-block;
     padding-left: 10px;
@@ -107,7 +112,7 @@
   .LinkList {
     list-style: none;
     padding: 0;
-    text-align: center;
+    // text-align: center;
 
     li {
       display: inline-block;
