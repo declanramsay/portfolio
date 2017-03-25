@@ -27,6 +27,7 @@ export default Component.extend({
     }
 
     let { track } = recentTracks;
+    track = track.slice(0, 3);
 
     return track.map((t, i) => {
       let artist = get(t, 'artist.#text');
