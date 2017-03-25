@@ -4,6 +4,12 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
+    'esw-cache-fallback': {
+      patterns: [
+        'https://personal-portfolio-b7670.firebaseio.com/(.+)',
+      ],
+    },
+
     sassOptions: {
       includePaths: ['app/styles'],
     },
