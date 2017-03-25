@@ -85,7 +85,12 @@ export default Component.extend({
       return;
     }
 
-    return twitter;
+    // return twitter;
+    return twitter.map((t) => {
+      let { text } = t;
+      let link = `https://twitter.com/thelucideffect/status/${t.id_str}`;
+      return { text, link };
+    });
   }),
 
   lastTweetIndex: computed('twitter', function() {
