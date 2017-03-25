@@ -13,7 +13,7 @@
             </p>
 
             <div class="Social--link">
-              Via <a href="https://www.last.fm/user/LucidEffective" target="_blank" rel="nofollow noreferrer">Last.fm</a>
+              Via <a href="https://www.last.fm/user/LucidEffective" target="_blank" rel="nofollow noreferrer noopener">Last.fm</a>
             </div>
           {{/if}}
         </div>
@@ -23,7 +23,7 @@
           {{#if latestRun}}
             <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em></p>
             <div class="Social--link">
-              Via <a href={{latestRun.link}} target="_blank" rel="nofollow noreferrer">Zombies, Run!</a>
+              Via <a href={{latestRun.link}} target="_blank" rel="nofollow noreferrer noopener">Zombies, Run!</a>
             </div>
           {{/if}}
         </div>
@@ -34,7 +34,7 @@
           <h3><i class="fa fa-twitter" aria-hidden="true"></i> Tweeting</h3>
           {{#if latestTweets}}
             {{#each latestTweets as |tweet index|}}
-              <a href={{tweet.link}} target="_blank" rel="nofollow noreferrer" style="text-decoration:none;">
+              <a href={{tweet.link}} target="_blank" rel="nofollow noreferrer noopener" style="text-decoration:none;">
                 <div style="display: block;">
                   <p>{{tweet.text}}</p>
                 </div>
@@ -45,7 +45,7 @@
             {{/each}}
 
             <div class="Social--link">
-              Via <a href="https://www.twitter.com/thelucideffect" target="_blank" rel="nofollow noreferrer">Twitter</a>
+              Via <a href="https://www.twitter.com/thelucideffect" target="_blank" rel="nofollow noreferrer noopener">Twitter</a>
             </div>
           {{/if}}
         </div>
@@ -54,9 +54,9 @@
           <h3><i class="fa fa-github" aria-hidden="true"></i> Coding</h3>
 
           {{#if latestCommit}}
-            <p>I commited to <a href={{latestCommit.url}} target="_blank" rel="nofollow noreferrer">{{latestCommit.name}}</a> {{latestCommit.time}}</p>
+            <p>I commited to <a href={{latestCommit.url}} target="_blank" rel="nofollow noreferrer noopener">{{latestCommit.name}}</a> {{latestCommit.time}}</p>
             <div class="Social--link">
-              Via <a href="https://github.com/thelucideffect" target="_blank" rel="nofollow noreferrer">Github</a>
+              Via <a href="https://github.com/thelucideffect" target="_blank" rel="nofollow noreferrer noopener">Github</a>
             </div>
           {{/if}}
         </div>
