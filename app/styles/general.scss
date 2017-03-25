@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+// @TODO this feels hacky... (for sticky footer)
+body > .ember-view {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
 .hidden {
   display: none;
 }
@@ -136,7 +147,6 @@ a {
     width: calc(100% - 24px);
     padding: 24px 12px;
   }
-
 
   .row {
     p,

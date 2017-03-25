@@ -167,3 +167,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 25em) {
+  .Header--headroom {
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .LinkList {
+    li {
+      font-size: 0.8rem;
+      width: 30px;
+    }
+  }
+}
