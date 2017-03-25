@@ -83,6 +83,12 @@ h2 {
   display: none !important;
 }
 
+hr {
+  background: $white;
+  height: 1px;
+  border: 0;
+}
+
 a {
   color: $black-25;
   transition: color ease .5s;
@@ -135,6 +141,7 @@ a {
   .row {
     p,
     h3,
+    hr,
     h4,
     ul,
     .Profile,

@@ -22,6 +22,10 @@ export default Component.extend({
     }
 
     let { recenttracks: recentTracks } = lastfm;
+    if(!recentTracks) {
+      return;
+    }
+
     let { track } = recentTracks;
 
     return track.map((t, i) => {
@@ -75,6 +79,22 @@ export default Component.extend({
     return { url, name, time };
   }),
 
+  latestTweets: computed('twitter', function() {
+    let twitter = get(this, 'twitter');
+    if(!twitter) {
+      return;
+    }
+
+    return twitter;
+  }),
+
+  lastTweetIndex: computed('twitter', function() {
+    let twitter = get(this, 'twitter');
+    if(twitter) {
+      return twitter.length - 1;
+    }
+  }),
+
   didInsertElement() {
     this._super(...arguments);
 
@@ -85,15 +105,17 @@ export default Component.extend({
       lastfm: s.fetch('lastfm'),
       instagram: s.fetch('instagram', true),
       github: s.fetch('github'),
+      twitter: s.fetch('twitter'),
     });
 
     return hashOfPromises
-      .then(({ zombies, lastfm, instagram, github }) => {
+      .then(({ zombies, lastfm, instagram, github, twitter }) => {
         setProperties(this, {
           instagram,
           zombies,
           lastfm,
           github,
+          twitter,
         });
       });
   },

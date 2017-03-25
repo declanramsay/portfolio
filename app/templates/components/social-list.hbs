@@ -22,6 +22,18 @@
       <div class="col-sm-6 response">
         <div class="Social--item">
           <h3><i class="fa fa-twitter" aria-hidden="true"></i> Tweeting</h3>
+          {{#if latestTweets}}
+            {{#each latestTweets as |tweet index|}}
+              <p>{{tweet.text}}</p>
+              {{#unless (equals index lastTweetIndex)}}
+                <hr>
+              {{/unless}}
+            {{/each}}
+
+            <div class="Social--link">
+              Via <a href="https://www.twitter.com/thelucideffect" target="_blank" rel="nofollow noreferrer">Twitter</a>
+            </div>
+          {{/if}}
         </div>
       </div>
 
