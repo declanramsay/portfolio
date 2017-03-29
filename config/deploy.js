@@ -20,6 +20,10 @@ module.exports = function(deployTarget) {
     region: 'ap-southeast-2',
   };
 
+  ENV['revision-data'] = {
+    type: 'git-commit',
+  };
+
   if(deployTarget === 'development') {
     ENV.build.environment = 'development';
     // configure other plugins for development deploy target here
