@@ -9,6 +9,10 @@ module.exports = function(defaults) {
       ],
     },
 
+    fingerprint: {
+      exclude: ['images/projects'],
+    },
+
     sassOptions: {
       includePaths: ['app/styles'],
     },
