@@ -16,6 +16,10 @@ module.exports = function(defaults) {
     sassOptions: {
       includePaths: ['app/styles'],
     },
+
+    dotEnv: {
+      clientAllowedKeys: ['AWS_ACCESS_KEY', 'AWS_SECRET_ACCESS_KEY'],
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
