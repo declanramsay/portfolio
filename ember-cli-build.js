@@ -6,7 +6,14 @@ module.exports = function(defaults) {
     'esw-cache-fallback': {
       patterns: [
         'https://personal-portfolio-b7670.firebaseio.com/(.+)',
+        'https://ws.audioscrobbler.com/2.0/(\\\\S*)',
+        'https://api.zombiesrungame.com/runs/(.+)',
+        'https://api.instagram.com/v1/users/1351380575/media/recent/(\\\\S*)',
+        'https://us-central1-personal-portfolio-b7670.cloudfunctions.net/twitterFeed',
+        'https://api.github.com/users/thelucideffect/events/public',
       ],
+
+      version: '1',
     },
 
     fingerprint: {
