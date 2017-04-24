@@ -61,10 +61,9 @@ export default Component.extend({
     }
 
     let { data: [latestPhoto] } = instagram;
-
     let { images, link } = latestPhoto;
-
     let image = images.standard_resolution;
+
     return { image, link };
   }),
 
@@ -75,7 +74,8 @@ export default Component.extend({
     }
 
     let [latest] = github;
-    let { created_at: createdAt, repo: { url, name } } = latest;
+    let { created_at: createdAt, repo: { name } } = latest;
+    let url = `https://github.com/${name}`;
     let time = moment(createdAt).fromNow();
     return { url, name, time };
   }),
