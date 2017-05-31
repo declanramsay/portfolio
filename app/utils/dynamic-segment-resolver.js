@@ -1,4 +1,4 @@
-import fetch from 'ember-network/fetch';
+import fetch from 'fetch';
 // eslint-disable-next-line no-unused-vars
 export default function dynamicSegmentResolver(dynamicSegmentKey, allSegments, otherDynamicSegments) {
 
@@ -9,8 +9,9 @@ export default function dynamicSegmentResolver(dynamicSegmentKey, allSegments, o
   // console.log('dynamicSegmentResolver:', dynamicSegmentKey, allSegments, otherDynamicSegments);
 
   if(dynamicSegmentKey === 'projectId') {
-    return fetch(`https://personal-portfolio-b7670.firebaseio.com/projects/${otherDynamicSegments.projectId}.json`)
-      .then((response) => response.json());
+    return fetch('https://personal-portfolio-b7670.firebaseio.com/projects.json')
+      .then((response) => response.json())
+      .then((projects) => Object.keys(projects));
   }
   return [];
 }

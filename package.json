@@ -59,7 +59,6 @@
     "eslint-plugin-ember-suave": "^1.0.0",
     "express-simple-static-server": "^0.1.0",
     "fetch-jsonp": "^1.0.6",
-    "headroom.js": "^0.9.3",
     "loader.js": "^4.2.3"
   },
   "engines": {

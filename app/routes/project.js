@@ -1,8 +1,8 @@
 import Ember from 'ember';
+import injectService from 'ember-service/inject';
 
 const {
   get,
-  inject: { service },
   Route,
   RSVP: {
     hash,
@@ -10,7 +10,8 @@ const {
 } = Ember;
 
 export default Route.extend({
-  api: service(),
+  api: injectService(),
+  fastboot: injectService(),
 
   model(params) {
     let api = get(this, 'api');
@@ -22,7 +23,9 @@ export default Route.extend({
   },
 
   activate() {
-    this._super();
-    window.scrollTo(0, 0);
+    this._super(...arguments);
+    if(!get(this, 'fastboot.isFastBoot')) {
+      window.scrollTo(0, 0);
+    }
   },
 });
