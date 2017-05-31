@@ -4,7 +4,7 @@ import injectService from 'ember-service/inject';
 const {
   get,
   Service,
-  RSVP: { resolve },
+  // RSVP: { resolve },
 } = Ember;
 
 const endpoints = {
@@ -21,23 +21,23 @@ export default Service.extend({
 
   fetch(type, useJSONP) {
     let api = get(this, 'api');
-    let isFastBoot = get(this, 'isFastBoot');
-    let shoebox = get(this, 'fastboot.shoebox');
-
-    if(!isFastBoot) {
-      let data = shoebox.retrieve(type);
-      if(data) {
-        return resolve(data);
-      }
-    }
+    // let isFastBoot = get(this, 'isFastBoot');
+    // let shoebox = get(this, 'fastboot.shoebox');
+    //
+    // if(!isFastBoot) {
+    //   let data = shoebox.retrieve(type);
+    //   if(data) {
+    //     return resolve(data);
+    //   }
+    // }
 
     let fetchMethod = useJSONP ? api.fetchJSON : api.fetch;
 
     return fetchMethod(endpoints[type])
       .then((response) => {
-        if(isFastBoot) {
-          shoebox.put(type);
-        }
+        // if(isFastBoot) {
+        //   shoebox.put(type);
+        // }
 
         return response;
       })

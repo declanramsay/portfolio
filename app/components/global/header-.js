@@ -1,23 +1,23 @@
 import Ember from 'ember';
 import Headroom from 'npm:headroom.js';
-import injectService from 'ember-service/inject';
+// import injectService from 'ember-service/inject';
 
 const {
   Component,
-  get,
+  // get,
   $: $$,
 } = Ember;
 
 export default Component.extend({
   tagName: 'div',
   classNames: ['container'],
-  fastboot: injectService(),
+  // fastboot: injectService(),
 
   didInsertElement() {
-    let isFastBoot = get(this, 'fastboot.isFastBoot');
-    if(isFastBoot) {
-      return;
-    }
+    // let isFastBoot = get(this, 'fastboot.isFastBoot');
+    // if(isFastBoot) {
+    //   return;
+    // }
 
     let header = $$('.Header--headroom').get(0);
 

@@ -11,6 +11,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('sitemap-txt', { path: 'sitemap.txt' }); // Required by ember-cli-prerender
   this.route('home', { path: '/' });
   this.route('project', { path: 'projects/:projectId' });
 });

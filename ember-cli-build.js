@@ -16,6 +16,12 @@ module.exports = function(defaults) {
       version: '1',
     },
 
+    'ember-cli-prerender': {
+      sitemap: {
+        rootUrl: 'https://declanramsay.co.uk/',
+      },
+    },
+
     fingerprint: {
       exclude: ['images/projects'],
     },

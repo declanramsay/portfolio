@@ -13,10 +13,10 @@ export default Route.extend({
 
   afterModel(model, transition) {
     this._super(model, transition);
-    let isFastboot = get(this, 'fastboot.isFastBoot');
-    if(isFastboot) {
-      return;
-    }
+    // let isFastboot = get(this, 'fastboot.isFastBoot');
+    // if(isFastboot) {
+    //   return;
+    // }
     get(this, 'removeAppLoader').perform();
   },
 
