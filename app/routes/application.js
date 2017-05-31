@@ -20,7 +20,7 @@ export default Route.extend({
     get(this, 'removeAppLoader').perform();
   },
 
-  // TODO: Reinstate
+  /* eslint-disable */
   removeAppLoader: task(function* () {
     let bal = $$('#before-app-loader');
     if(!bal.length) {
@@ -28,4 +28,5 @@ export default Route.extend({
     }
     bal.remove();
   }),
+  /* eslint-enable */
 });
