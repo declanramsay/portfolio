@@ -1,13 +1,7 @@
 # portfolio
 
-My personal portfolio, currently under construction.
-
-## Tools Used
-
-* Atom
-* OhMyZsh
-* Github
-* [Trello](https://trello.com/b/0D8PbsBb/portfolio-site)
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
 ## Prerequisites
 
@@ -15,7 +9,6 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
 
@@ -24,7 +17,6 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd portfolio`
 * `npm install`
-* `bower install`
 
 ## Running / Development
 
