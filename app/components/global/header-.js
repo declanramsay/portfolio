@@ -10,7 +10,7 @@ const {
 
 export default Component.extend({
   tagName: 'div',
-  classNames: ['container'],
+  // classNames: ['container'],
   fastboot: injectService(),
 
   didInsertElement() {
