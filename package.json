@@ -12,10 +12,8 @@
   "repository": "",
   "scripts": {
     "build": "ember build --environment=production",
-    "postbuild": "ember prerender",
     "start": "ember server",
-    "test": "ember test",
-    "start-prerendered": "static-server dist"
+    "test": "ember test"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -34,11 +32,10 @@
     "ember-cli-deploy-revision-data": "^0.3.3",
     "ember-cli-dotenv": "^1.2.0",
     "ember-cli-eslint": "^4.0.0",
-    "ember-cli-fastboot": "^1.0.0-beta.19",
+    "ember-cli-fastboot": "^1.1.0",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
-    "ember-cli-prerender": "^1.2.0",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-sass": "^6.1.1",
     "ember-cli-shims": "^1.1.0",

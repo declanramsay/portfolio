@@ -1,23 +1,9 @@
 /* eslint-env node */
 
 module.exports = function(deployTarget) {
-  var ENV = {
+  let ENV = {
     build: {},
     // include other plugin configuration that applies to all deploy targets here
-  };
-
-  ENV.s3 = {
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    bucket: 'declan-ramsay-portfolio',
-    region: 'ap-southeast-2',
-  };
-
-  ENV['s3-index'] = {
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    bucket: 'declan-ramsay-portfolio',
-    region: 'ap-southeast-2',
   };
 
   ENV['revision-data'] = {
