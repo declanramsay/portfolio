@@ -1,12 +1,9 @@
 /* global Headroom */
-import Ember from 'ember';
-import injectService from 'ember-service/inject';
+import Component from '@ember/component';
 
-const {
-  Component,
-  get,
-  $: $$,
-} = Ember;
+import { get } from '@ember/object';
+import $ from 'jquery';
+import injectService from 'ember-service/inject';
 
 export default Component.extend({
   tagName: 'div',
@@ -18,7 +15,7 @@ export default Component.extend({
       return;
     }
 
-    let header = $$('.Header--headroom').get(0);
+    let header = $('.Header--headroom').get(0);
 
     let headroom = new Headroom(header, {
       offset: 220,
