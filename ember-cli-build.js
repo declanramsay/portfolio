@@ -1,8 +1,9 @@
 /* eslint-env node */
+'use strict';
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  let app = new EmberApp(defaults, {
     'esw-cache-fallback': {
       patterns: [
         'https://personal-portfolio-b7670.firebaseio.com/(.+)',
@@ -45,7 +46,7 @@ module.exports = function(defaults) {
   // along with the exports of each module as its value.
 
   if(!process.env.EMBER_CLI_FASTBOOT) {
-    app.import('vendor/headroom.js')
+    app.import('vendor/headroom.js');
   }
 
   return app.toTree();
