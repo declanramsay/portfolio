@@ -1,29 +1,3 @@
-/* global Headroom */
-import Ember from 'ember';
-import injectService from 'ember-service/inject';
+import Component from '@ember/component';
 
-const {
-  Component,
-  get,
-  $: $$,
-} = Ember;
-
-export default Component.extend({
-  tagName: 'div',
-  fastboot: injectService(),
-
-  didInsertElement() {
-    let isFastBoot = get(this, 'fastboot.isFastBoot');
-    if(isFastBoot) {
-      return;
-    }
-
-    let header = $$('.Header--headroom').get(0);
-
-    let headroom = new Headroom(header, {
-      offset: 220,
-    });
-
-    headroom.init();
-  },
-});
+export default Component.extend({});

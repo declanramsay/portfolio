@@ -1,8 +1,9 @@
 /* eslint-env node */
+'use strict';
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
-  var app = new EmberApp(defaults, {
+  let app = new EmberApp(defaults, {
     'esw-cache-fallback': {
       patterns: [
         'https://personal-portfolio-b7670.firebaseio.com/(.+)',
@@ -14,12 +15,6 @@ module.exports = function(defaults) {
       ],
 
       version: '1',
-    },
-
-    'ember-cli-prerender': {
-      sitemap: {
-        rootUrl: 'https://declanramsay.co.uk/',
-      },
     },
 
     fingerprint: {
@@ -44,9 +39,9 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  if(!process.env.EMBER_CLI_FASTBOOT) {
-    app.import('vendor/headroom.js')
-  }
+  // if(!process.env.EMBER_CLI_FASTBOOT) {
+  //   app.import('vendor/headroom.js');
+  // }
 
   return app.toTree();
 };
