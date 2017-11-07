@@ -35,7 +35,7 @@
   },
   "lucid-effect-national-tour": {
     "date": "August 2016",
-    "description": "<p>In 2016, after the release of my single <i>Gretchen Ross</i> I embarked on a solo tour of New Zealand, with fellow musician Emily Riordan in support. Spread over 5 cities, we performed to hundreds of people and travelled all the way from Auckland to Dunedin.</p> <p>Despite being our debut tour, our first time performing in the South Island, and being entirely self-organised we were very successful and broke even by tour's end.</p>",
+    "description": "<p>In 2016, after the release of my single <i>Gretchen Ross</i> I embarked on a solo tour of New Zealand, with fellow musician Emily Riordan in support. Spread over 5 cities, we performed to hundreds of people and travelled all the way from Auckland to Dunedin.</p> <p>Despite being our debut tour, our first time performing in the South Island, and being entirely self-organised we were very successful and broke even by tour's end.</p> <iframe src=\"https://open.spotify.com/embed/track/4LuFa1sVKX6l3ET94ohZ8w\" width=\"100%\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>",
     "id": "lucid-effect-national-tour",
     "images": [
       {
@@ -47,13 +47,13 @@
         "src": "../assets/images/projects/national-tour-performing.jpg"
       },
       {
-        "alt": "Posed with Guitar and Cajon",
-        "src": "../assets/images/projects/national-tour-posed.jpg"
+        "alt": "Lucid Effect performing at The Wine Cellar, Auckland",
+        "src": "../assets/images/projects/national-tour-auckland.jpg"
       }
     ],
     "leadImage": {
-      "alt": "Lucid Effect performing at The Wine Cellar, Auckland",
-      "src": "../assets/images/projects/national-tour-auckland.jpg"
+      "alt": "Website for the National Tour, designed by Declan Ramsay",
+      "src": "../assets/images/projects/the-lucid-effect-website.png"
     },
     "links": [
       {
@@ -78,11 +78,10 @@
       "Management",
       "Planning",
       "Budgeting",
-      "Promotion",
       "Advertising",
       "Performing",
       "Creativity",
-      "Press"
+      "HTML/CSS"
     ],
     "tags": [
       "Event Planning",
