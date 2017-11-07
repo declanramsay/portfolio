@@ -30,18 +30,18 @@
           {{/each}}
         </div>
 
+        {{{project.description}}}
+
         <p>
           <strong>Skills / Technologies:</strong>
           {{#each skills as |skill index|}}
             {{#if (equals index lastSkillIndex)}}
               {{skill}}
-            {{else}}
+            {{else}} 
               {{skill}},
             {{/if}}
           {{/each}}
         </p>
-
-        {{{project.description}}}
 
         {{#if project.links}}
           <h4 class="m-b-0">Links:</h4>
