@@ -14,25 +14,11 @@
   </div>
 </div>
 
+{{project-list
+  projects=model.projects
+}}
+
 <div class="container content">
-  <div class="Profile row middle-xs center-xs m-b-sm">
-    <div class="col-xs-2">
-      <img src="assets/images/my-sprite-l.gif" alt="Sprite of Declan" class="responsive--max">
-    </div>
-
-    <div class="col-xs-8">
-      <p>Hi, I'm Declan. Developer, Musician, and General Dork, I'm passionate about all things web. I love building exciting and useful web applications that are beautiful both in form and function.</p>
-    </div>
-
-    <div class="col-xs-2">
-      <img src="assets/images/my-sprite.gif" alt="Sprite of Declan" class="responsive--max">
-    </div>
-  </div>
-
-  {{project-list
-    projects=model.projects
-  }}
-
   {{about-me}}
 
   {{social-list

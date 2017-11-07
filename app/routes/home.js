@@ -3,7 +3,8 @@ import Route from '@ember/routing/route';
 import { hash } from 'rsvp';
 import injectService from 'ember-service/inject';
 
-const PROJECT_ENDPOINT = 'https://personal-portfolio-b7670.firebaseio.com/projects.json';
+// const PROJECT_ENDPOINT = 'https://personal-portfolio-b7670.firebaseio.com/projects.json';
+const PROJECT_ENDPOINT = '/projects.json';
 
 export default Route.extend({
   api: injectService(),

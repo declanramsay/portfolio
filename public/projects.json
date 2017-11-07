@@ -1,0 +1,176 @@
+{
+  "joblint-extension": {
+    "date": "March 2017",
+    "description": "<p>A small extension for testing job posts for issues with sexism, culture, expectations, and recruiter fails. I built this extension to become familiar with Chrome extension development, building upon the already existing joblint library. While the library's creator had built a website to paste posts to, the ability to select text and run the linter in an extension makes the library much more usable and accessible.</p>",
+    "id": "joblint-extension",
+    "leadImage": {
+      "alt": "Joblint Chrome Extension",
+      "src": "../assets/images/projects/joblint.gif"
+    },
+    "links": [
+      {
+        "title": "Chrome Extension",
+        "url": "https://chrome.google.com/webstore/detail/joblint/amocmhopdccjmbheafgjicjcbmpogdhm"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/thelucideffect/joblint-chrome/"
+      }
+    ],
+    "order": 3,
+    "skills": [
+      "Git",
+      "Chrome",
+      "Javascript",
+      "LocalStorage"
+    ],
+    "tags": [
+      "Web Development"
+    ],
+    "title": "Joblint Chrome Extension",
+    "gradient": {
+      "start": "#8016ac",
+      "end": "#bd1b99"
+    }
+  },
+  "lucid-effect-national-tour": {
+    "date": "August 2016",
+    "description": "<p>In 2016, after the release of my single <i>Gretchen Ross</i> I embarked on a solo tour of New Zealand, with fellow musician Emily Riordan in support. Spread over 5 cities, we performed to hundreds of people and travelled all the way from Auckland to Dunedin.</p> <p>Despite being our debut tour, our first time performing in the South Island, and being entirely self-organised we were very successful and broke even by tour's end.</p>",
+    "id": "lucid-effect-national-tour",
+    "images": [
+      {
+        "alt": "Poster for the National Tour, designed by Declan Ramsay",
+        "src": "../assets/images/projects/national-poster.jpg"
+      },
+      {
+        "alt": "Performing at The Wine Cellar, Auckland",
+        "src": "../assets/images/projects/national-tour-performing.jpg"
+      },
+      {
+        "alt": "Posed with Guitar and Cajon",
+        "src": "../assets/images/projects/national-tour-posed.jpg"
+      }
+    ],
+    "leadImage": {
+      "alt": "Lucid Effect performing at The Wine Cellar, Auckland",
+      "src": "../assets/images/projects/national-tour-auckland.jpg"
+    },
+    "links": [
+      {
+        "title": "Second Hand News",
+        "url": "http://www.secondhandnews.nz/news--reviews/lucid-effect-national-tour"
+      },
+      {
+        "title": "13th Floor",
+        "url": "https://www.13thfloor.co.nz/?p=71593"
+      },
+      {
+        "title": "Muzic.net.nz",
+        "url": "http://www.muzic.net.nz/news/5619/lucid-effect-announces-national-tour.html"
+      },
+      {
+        "title": "Taranaki Daily News",
+        "url": "http://www.stuff.co.nz/taranaki-daily-news/news/82717344/new-plymouth-musician-lucid-effect-sets-sail-for-national-tour"
+      }
+    ],
+    "order": 2,
+    "skills": [
+      "Management",
+      "Planning",
+      "Budgeting",
+      "Promotion",
+      "Advertising",
+      "Performing",
+      "Creativity",
+      "Press"
+    ],
+    "tags": [
+      "Event Planning",
+      "Design"
+    ],
+    "title": "Lucid Effect National Tour",
+    "gradient": {
+      "start": "#143244",
+      "end": "#d1c8ab"
+    }
+  },
+  "media-project": {
+    "date": "September 2016 - March 2017",
+    "description": "<p>A thorough redesign and build of TVNZ combined their previously built OnDemand experience and their seperate show information site in to a single platform. I worked extensively throughout the codebase, particularly on their Authentication and login/register flows, implementing their advertising solution, favouriting, and internal resolution of layout and module information provided by the API.</p> <p>For this project I also lead the team in embracing a style guide enforced by Dockyard's ember-suave ruleset. Implementing this style meant we had a consistent codebase which was easier to maintain and introduce other developers to. We also used TDD practices in building the internal layout resolution and Advertising.</p>",
+    "id": "media-project",
+    "images": [
+      {
+        "alt": "Show view of the TVNZ Single Site",
+        "src": "../assets/images/projects/tvnz-show.jpg"
+      },
+      {
+        "alt": "Episodes view of the TVNZ Single Site",
+        "src": "../assets/images/projects/tvnz-episodes.jpg"
+      }
+    ],
+    "leadImage": {
+      "alt": "TVNZ",
+      "src": "../assets/images/projects/tvnz-homepage.jpg"
+    },
+    "links": [
+      {
+        "title": "TVNZ",
+        "url": "https://www.tvnz.co.nz/"
+      }
+    ],
+    "order": 4,
+    "skills": [
+      "Ember",
+      "REST",
+      "Javascript",
+      "Git",
+      "JIRA",
+      "TDD",
+      "Styleguide",
+      "GPT",
+      "Agile"
+    ],
+    "tags": [
+      "Web Development"
+    ],
+    "title": "TVNZ Single Site",
+    "gradient": {
+      "start": "#000000",
+      "end": "#006AFF"
+    }
+  },
+  "the-co-operative-bank": {
+    "date": "January 2015 - August 2016",
+    "description": "<p>I was a part of the development team for The Co-operative Bank's new online banking platform. Instead of sandboxing the internet banking experience and marketing site, The Co-operative Bank decided to have both on a singular platform, allowing users to see their information without fully logging-in and to traverse freely between their accounts and offers. This meant that information on the marketing side could be more targetted to their users' financial situation.</p><p>Working closely with The Co-operative Bank's developers I got to experience many aspects of development and I worked on both their initial release and subsequent feature cycles. I eventually stepped up to a more lead-like role on a number of their flows such as Overdraft and Personal Loan Origination, as well as the Join Us and Change Account flows.</p>",
+    "id": "the-co-operative-bank",
+    "leadImage": {
+      "alt": "The Co-operative Bank",
+      "src": "../assets/images/projects/co-op-tile.jpg"
+    },
+    "links": [
+      {
+        "title": "The Co-operative Bank Website",
+        "url": "https://co-operativebank.co.nz"
+      }
+    ],
+    "order": 1,
+    "skills": [
+      "Ember",
+      "Sass",
+      "REST",
+      "Javascript",
+      "Git",
+      "Trello",
+      "Sifter",
+      "Agile"
+    ],
+    "tags": [
+      "Web Development"
+    ],
+    "title": "The Co-operative Bank",
+    "gradient": {
+      "start": "#118c3a",
+      "end": "#87c95e"
+    }
+  }
+}

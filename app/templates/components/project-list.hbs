@@ -1,4 +1,4 @@
-<h2>Projects</h2>
+{{!--<h2>Projects</h2>
 
 <div class="row Project--list">
   {{#each items as |project|}}
@@ -21,4 +21,8 @@
       {{/link-to}}
     </div>
   {{/each}}
-</div>
+</div>--}}
+
+{{#each items as |project|}}
+  {{project-item project=project}}
+{{/each}}
