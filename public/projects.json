@@ -2,6 +2,10 @@
   "joblint-extension": {
     "date": "March 2017",
     "description": "<p>A small extension for testing job posts for issues with sexism, culture, expectations, and recruiter fails. I built this extension to become familiar with Chrome extension development, building upon the already existing joblint library. While the library's creator had built a website to paste posts to, the ability to select text and run the linter in an extension makes the library much more usable and accessible.</p>",
+    "leadLink": {
+      "title": "Install Joblint Extension",
+      "url": "https://chrome.google.com/webstore/detail/joblint/amocmhopdccjmbheafgjicjcbmpogdhm"
+    },
     "id": "joblint-extension",
     "leadImage": {
       "alt": "Joblint Chrome Extension",
@@ -35,7 +39,11 @@
   },
   "lucid-effect-national-tour": {
     "date": "August 2016",
-    "description": "<p>In 2016, after the release of my single <i>Gretchen Ross</i> I embarked on a solo tour of New Zealand, with fellow musician Emily Riordan in support. Spread over 5 cities, we performed to hundreds of people and travelled all the way from Auckland to Dunedin.</p> <p>Despite being our debut tour, our first time performing in the South Island, and being entirely self-organised we were very successful and broke even by tour's end.</p> <iframe src=\"https://open.spotify.com/embed/track/4LuFa1sVKX6l3ET94ohZ8w\" width=\"100%\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>",
+    "description": "<p>In 2016, after the release of my single <i>Gretchen Ross</i> I embarked on a solo tour of New Zealand, with fellow musician Emily Riordan in support. Spread over 5 cities, we performed to hundreds of people and travelled all the way from Auckland to Dunedin.</p> <p>Without a label or management, I was responsible for all aspects of organisation the tour including planning, budgeting, marketing, and finally performing. While the tour itself only last 2 and a half weeks, months of preparation went into making sure the tour would be a success.</p> <p>Ultimately despite being our debut tour, our first time performing in the South Island, and being entirely self-organised we were very successful and broke even by tour's end.</p> <iframe src=\"https://open.spotify.com/embed/track/4LuFa1sVKX6l3ET94ohZ8w\" width=\"100%\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>",
+    "leadLink": {
+      "title": "www.thelucideffect.com",
+      "url": "http://www.thelucideffect.com"
+    },
     "id": "lucid-effect-national-tour",
     "images": [
       {
@@ -94,8 +102,12 @@
     }
   },
   "media-project": {
-    "date": "September 2016 - March 2017",
+    "date": "September 2016 - July 2017",
     "description": "<p>A thorough redesign and build of TVNZ combined their previously built OnDemand experience and their seperate show information site in to a single platform. I worked extensively throughout the codebase, particularly on their Authentication and login/register flows, implementing their advertising solution, favouriting, and internal resolution of layout and module information provided by the API.</p> <p>For this project I also lead the team in embracing a style guide enforced by Dockyard's ember-suave ruleset. Implementing this style meant we had a consistent codebase which was easier to maintain and introduce other developers to. We also used TDD practices in building the internal layout resolution and Advertising.</p>",
+    "leadLink": {
+      "title": "https://www.tvnz.co.nz",
+      "url": "https://www.tvnz.co.nz/"
+    },
     "id": "media-project",
     "images": [
       {
@@ -111,12 +123,6 @@
       "alt": "TVNZ",
       "src": "../assets/images/projects/tvnz-homepage.jpg"
     },
-    "links": [
-      {
-        "title": "TVNZ",
-        "url": "https://www.tvnz.co.nz/"
-      }
-    ],
     "order": 4,
     "skills": [
       "Ember",
@@ -141,17 +147,15 @@
   "the-co-operative-bank": {
     "date": "January 2015 - August 2016",
     "description": "<p>I was a part of the development team for The Co-operative Bank's new online banking platform. Instead of sandboxing the internet banking experience and marketing site, The Co-operative Bank decided to have both on a singular platform, allowing users to see their information without fully logging-in and to traverse freely between their accounts and offers. This meant that information on the marketing side could be more targetted to their users' financial situation.</p><p>Working closely with The Co-operative Bank's developers I got to experience many aspects of development and I worked on both their initial release and subsequent feature cycles. I eventually stepped up to a more lead-like role on a number of their flows such as Overdraft and Personal Loan Origination, as well as the Join Us and Change Account flows.</p>",
+    "leadLink": {
+      "title": "https://co-operativebank.co.nz",
+      "url": "https://co-operativebank.co.nz"
+    },
     "id": "the-co-operative-bank",
     "leadImage": {
       "alt": "The Co-operative Bank",
       "src": "../assets/images/projects/co-op-tile.jpg"
     },
-    "links": [
-      {
-        "title": "The Co-operative Bank Website",
-        "url": "https://co-operativebank.co.nz"
-      }
-    ],
     "order": 1,
     "skills": [
       "Ember",
