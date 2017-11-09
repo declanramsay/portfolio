@@ -19,6 +19,10 @@
       {
         "title": "Github",
         "url": "https://github.com/thelucideffect/joblint-chrome/"
+      },
+      {
+        "title": "Product Hunt",
+        "url": "https://www.producthunt.com/posts/joblint-chrome-extension"
       }
     ],
     "order": 3,
@@ -45,11 +49,7 @@
       "url": "http://www.thelucideffect.com"
     },
     "id": "lucid-effect-national-tour",
-    "images": [
-      {
-        "alt": "Poster for the National Tour, designed by Declan Ramsay",
-        "src": "../assets/images/projects/national-tour-poster.png"
-      },
+    "images": [ 
       {
         "alt": "Performing at The Wine Cellar, Auckland",
         "src": "../assets/images/projects/national-tour-performing.jpg"
@@ -111,10 +111,6 @@
     "id": "media-project",
     "images": [
       {
-        "alt": "Show view of the TVNZ Single Site",
-        "src": "../assets/images/projects/tvnz-show.jpg"
-      },
-      {
         "alt": "Episodes view of the TVNZ Single Site",
         "src": "../assets/images/projects/tvnz-episodes.jpg"
       }
@@ -152,6 +148,12 @@
       "url": "https://co-operativebank.co.nz"
     },
     "id": "the-co-operative-bank",
+    "images": [
+      {
+        "alt": "Co-operative Bank Personal Loan flow",
+        "src": "../assets/images/projects/co-op-loan.png"
+      }
+    ],
     "leadImage": {
       "alt": "The Co-operative Bank",
       "src": "../assets/images/projects/co-op-tile.jpg"
