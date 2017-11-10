@@ -9,7 +9,7 @@
     "id": "joblint-extension",
     "leadImage": {
       "alt": "Joblint Chrome Extension",
-      "src": "../assets/images/projects/joblint.gif"
+      "src": "../assets/images/projects/joblint-action.gif"
     },
     "links": [
       {
@@ -49,7 +49,7 @@
       "url": "http://www.thelucideffect.com"
     },
     "id": "lucid-effect-national-tour",
-    "images": [ 
+    "images": [
       {
         "alt": "Performing at The Wine Cellar, Auckland",
         "src": "../assets/images/projects/national-tour-performing.jpg"
