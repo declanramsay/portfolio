@@ -139,14 +139,14 @@ a {
     list-style: none;
     padding: 0;
   }
-  a {
-    color: $white;
-    transition: color ease .5s;
+  // a {
+    // color: $white;
+    // transition: color ease .5s;
 
-    &:hover {
-      color: $pink;
-    }
-  }
+    // &:hover {
+      // color: $pink;
+    // }
+  // }
 }
 
 .Footer-text {
