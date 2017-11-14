@@ -1,9 +1,5 @@
-import Ember from 'ember';
-
-const {
-  inject,
-  Route,
-} = Ember;
+import { inject as service } from '@ember/service';
+import Route from '@ember/routing/route';
 
 // The line below is not needed if you don't have any dynamic segments
 import dynamicSegmentResolver from '../utils/dynamic-segment-resolver';
@@ -11,7 +7,7 @@ import dynamicSegmentResolver from '../utils/dynamic-segment-resolver';
 import sitemapEntryFilter from '../utils/sitemap-entry-filter';
 
 export default Route.extend({
-  sitemap: inject.service(),
+  sitemap: service(),
 
   model() {
     let sitemap = this.get('sitemap');

@@ -1,14 +1,8 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { hash } from 'rsvp';
+import { computed, get, setProperties } from '@ember/object';
 import injectService from 'ember-service/inject';
 import moment from 'npm:moment';
-
-const {
-  Component,
-  computed,
-  get,
-  RSVP: { hash },
-  setProperties,
-} = Ember;
 
 export default Component.extend({
   social: injectService(),

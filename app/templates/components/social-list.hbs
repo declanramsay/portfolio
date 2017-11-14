@@ -1,78 +1,82 @@
-<div class="Social row">
-  <div class="col-sm-8">
-    <div class="row Social">
-      <div class="col-sm-6 responsive">
-        <div class="Social--item">
-          <h3><i class="fa fa-music" aria-hidden="true"></i> Listening</h3>
-          {{#if tracks}}
-            <p>
-              Lately I've been blasting
-              {{#each tracks as |t|}}
-                {{#if t.isLast}} and{{/if}} <em>{{t.name}}</em> by <strong>{{t.artist}}</strong>{{#unless t.isLast}},{{/unless}}
-              {{/each}}
-            </p>
+<div class="Social--background">
+  <div class="container content">
+    <div class="Social row">
+      <div class="col-sm-8">
+        <div class="row Social">
+          <div class="col-sm-6 responsive">
+            <div class="Social--item">
+              <h3><i class="fa fa-music" aria-hidden="true"></i> Listening</h3>
+              {{#if tracks}}
+                <p>
+                  Lately I've been blasting
+                  {{#each tracks as |t|}}
+                    {{#if t.isLast}} and{{/if}} <em>{{t.name}}</em> by <strong>{{t.artist}}</strong>{{#unless t.isLast}},{{/unless}}
+                  {{/each}}
+                </p>
 
-            <div class="Social--link">
-              Via <a href="https://www.last.fm/user/LucidEffective" target="_blank" rel="nofollow noreferrer noopener">Last.fm</a>
-            </div>
-          {{/if}}
-        </div>
-
-        <div class="Social--item">
-          <h3><i class="fa fa-heartbeat" aria-hidden="true"></i> Running</h3>
-          {{#if latestRun}}
-            <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em></p>
-            <div class="Social--link">
-              Via <a href={{latestRun.link}} target="_blank" rel="nofollow noreferrer noopener">Zombies, Run!</a>
-            </div>
-          {{/if}}
-        </div>
-      </div>
-
-      <div class="col-sm-6 response">
-        <div class="Social--item">
-          <h3><i class="fa fa-twitter" aria-hidden="true"></i> Tweeting</h3>
-          {{#if latestTweets}}
-            {{#each latestTweets as |tweet index|}}
-              <a href={{tweet.link}} target="_blank" rel="nofollow noreferrer noopener" style="text-decoration:none;">
-                <div style="display: block;">
-                  <p>{{tweet.text}}</p>
+                <div class="Social--link">
+                  Via <a href="https://www.last.fm/user/LucidEffective" target="_blank" rel="nofollow noreferrer noopener">Last.fm</a>
                 </div>
-              </a>
-              {{#unless (equals index lastTweetIndex)}}
-                <hr>
-              {{/unless}}
-            {{/each}}
-
-            <div class="Social--link">
-              Via <a href="https://www.twitter.com/thelucideffect" target="_blank" rel="nofollow noreferrer noopener">Twitter</a>
+              {{/if}}
             </div>
-          {{/if}}
-        </div>
 
-        <div class="Social--item">
-          <h3><i class="fa fa-github" aria-hidden="true"></i> Coding</h3>
-
-          {{#if latestCommit}}
-            <p>I commited to <a href={{latestCommit.url}} target="_blank" rel="nofollow noreferrer noopener">{{latestCommit.name}}</a> {{latestCommit.time}}</p>
-            <div class="Social--link">
-              Via <a href="https://github.com/thelucideffect" target="_blank" rel="nofollow noreferrer noopener">Github</a>
+            <div class="Social--item">
+              <h3><i class="fa fa-heartbeat" aria-hidden="true"></i> Running</h3>
+              {{#if latestRun}}
+                <p>My latest run was {{latestRun.distance}}km in {{latestRun.time}} minutes, completing mission <em>{{latestRun.missionCode}}</em></p>
+                <div class="Social--link">
+                  Via <a href={{latestRun.link}} target="_blank" rel="nofollow noreferrer noopener">Zombies, Run!</a>
+                </div>
+              {{/if}}
             </div>
-          {{/if}}
-        </div>
+          </div>
 
+          <div class="col-sm-6 response">
+            <div class="Social--item">
+              <h3><i class="fa fa-twitter" aria-hidden="true"></i> Tweeting</h3>
+              {{#if latestTweets}}
+                {{#each latestTweets as |tweet index|}}
+                  <a href={{tweet.link}} target="_blank" rel="nofollow noreferrer noopener" style="text-decoration:none;">
+                    <div style="display: block;">
+                      <p>{{tweet.text}}</p>
+                    </div>
+                  </a>
+                  {{#unless (equals index lastTweetIndex)}}
+                    <hr>
+                  {{/unless}}
+                {{/each}}
+
+                <div class="Social--link">
+                  Via <a href="https://www.twitter.com/thelucideffect" target="_blank" rel="nofollow noreferrer noopener">Twitter</a>
+                </div>
+              {{/if}}
+            </div>
+
+            <div class="Social--item">
+              <h3><i class="fa fa-github" aria-hidden="true"></i> Coding</h3>
+
+              {{#if latestCommit}}
+                <p>I commited to <a href={{latestCommit.url}} target="_blank" rel="nofollow noreferrer noopener">{{latestCommit.name}}</a> {{latestCommit.time}}</p>
+                <div class="Social--link">
+                  Via <a href="https://github.com/thelucideffect" target="_blank" rel="nofollow noreferrer noopener">Github</a>
+                </div>
+              {{/if}}
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="col-sm-4 responsive">
-    <div class="Social">
-      {{#if latestPhoto}}
-        <img src={{latestPhoto.image.url}} alt={{latestPhoto.link}} class="responsive">
-        <div class="Social--link">
-          Via <a href={{latestPhoto.link}} target="_blank" rel="nofollow noreferrer noopener">Instagram</a>
+      <div class="col-sm-4 responsive">
+        <div class="Social">
+          {{#if latestPhoto}}
+            <img src={{latestPhoto.image.url}} alt={{latestPhoto.link}} class="responsive">
+            <div class="Social--link">
+              Via <a href={{latestPhoto.link}} target="_blank" rel="nofollow noreferrer noopener">Instagram</a>
+            </div>
+          {{/if}}
         </div>
-      {{/if}}
+      </div>
     </div>
   </div>
 </div>

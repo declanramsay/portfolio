@@ -1,14 +1,7 @@
-import Ember from 'ember';
+import { reject, resolve } from 'rsvp';
+import Service from '@ember/service';
 import fetch from 'fetch';
 import fetchJsonp from 'npm:fetch-jsonp';
-
-const {
-  RSVP: {
-    resolve,
-    reject,
-  },
-  Service,
-} = Ember;
 
 const checkStatus = function(response) {
   if(response.status >= 200 && response.status < 300) {

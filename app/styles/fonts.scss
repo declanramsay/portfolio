@@ -1,46 +1,35 @@
-$sourcesans-stack: "source_sans", 'Helvetica Neue', Helvetica, sans-serif;
+$montserrat-stack: "montserrat", 'Helvetica Neue', Helvetica, sans-serif;
 
 @font-face {
-  font-family: 'source_sans';
+  font-family: 'montserrat';
   src: local("⌁"),
-  url('/assets/fonts/sourcesanspro-bold.woff2') format('woff2'),
-  url('/assets/fonts/sourcesanspro-bold.woff') format('woff');
+  url('/assets/fonts/montserrat/montserrat-bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: 'source_sans';
+  font-family: 'montserrat';
   src: local("⌁"),
-  url('/assets/fonts/sourcesanspro-semibold.woff2') format('woff2'),
-  url('/assets/fonts/sourcesanspro-semibold.woff') format('woff');
+  url('/assets/fonts/montserrat/montserrat-semibold.ttf') format('ttf');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
-  font-family: 'source_sans';
+  font-family: 'montserrat';
   src: local("⌁"),
-  url('/assets/fonts/sourcesanspro-regular.woff2') format('woff2'),
-  url('/assets/fonts/sourcesanspro-regular.woff') format('woff');
+  url('/assets/fonts/montserrat/montserrat-regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
-@font-face {
-  font-family: 'source_sans';
-  src: local("⌁"),
-  url('/assets/fonts/sourcesanspro-light.woff2') format('woff2'),
-  url('/assets/fonts/sourcesanspro-light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
 
-%sourcesans-font {
-  font-family: $sourcesans-stack;
+%montserrat-font {
+  font-family: $montserrat-stack;
   font-style: normal;
   font-weight: 400;
 }
 
 html {
-  @extend %sourcesans-font;
+  @extend %montserrat-font;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.57;

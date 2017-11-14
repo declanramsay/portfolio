@@ -1,9 +1,5 @@
-import Ember from 'ember';
+import EmberRouter from '@ember/routing/router';
 import config from './config/environment';
-
-const {
-  Router: EmberRouter,
-} = Ember;
 
 const Router = EmberRouter.extend({
   location: config.locationType,
@@ -11,9 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('sitemap-txt', { path: 'sitemap.txt' }); // Required by ember-cli-prerender
+  // this.route('sitemap-txt', { path: 'sitemap.txt' }); // Required by ember-cli-prerender
+  // this.route('project', { path: 'projects/:projectId' });
   this.route('home', { path: '/' });
-  this.route('project', { path: 'projects/:projectId' });
 });
 
 export default Router;

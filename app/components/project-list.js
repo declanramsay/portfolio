@@ -1,10 +1,5 @@
-import Ember from 'ember';
-
-const {
-  get,
-  Component,
-  computed,
-} = Ember;
+import Component from '@ember/component';
+import { computed, get } from '@ember/object';
 
 export default Component.extend({
   items: computed('projects', function() {

@@ -1,59 +1,61 @@
-<div class="row reverse">
-  <div class="col-sm-5 Project">
-    <div class="sm-visible">
-      {{#link-to 'home' class="Project-link"}}<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back to Projects{{/link-to}}
-      <h3 class="m-t-0 m-b-0">{{project.title}}</h3>
-      <p class="m-t-0">
-        <em>{{project.date}}</em>
-      </p>
-    </div>
+<div style="background: linear-gradient(45deg, {{project.gradient.start}},{{project.gradient.end}});">
+  <div class="container content">
+    <div class="row reverse">
+      <div class="col-sm-5 Project">
+        <div class="sm-visible">
+          <h3 class="m-t-0 m-b-0">{{project.title}}</h3>
+          <p class="m-t-offset">
+            <a href={{project.leadLink.url}} target="_blank" rel="noopener noreferrer">{{project.leadLink.title}}</a>
+            <p class="m-t-0">
+              <em>{{project.date}}</em>
+            </p>
+          </p>
+        </div>
 
-    <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" data-image-id={{project.id}}>
+        <img src={{project.leadImage.src}} alt={{project.leadImage.alt}} class="responsive" data-image-id={{project.id}}>
 
-    <div class="sm-hidden">
-      {{project-images project=project}}
-    </div>
-  </div>
+        <div class="sm-hidden">
+          {{project-images project=project}}
+        </div>
+      </div>
 
-  <div class="col-sm-7 Project">
-    <div class="sm-hidden">
-      {{#link-to 'home' class="Project-link"}}<i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Back to Projects{{/link-to}}
-      <h3 class="m-t-0 m-b-0">{{project.title}}</h3>
-      <p class="m-t-0">
-        <em>{{project.date}}</em>
-      </p>
-    </div>
+      <div class="col-sm-7 Project">
+        <div class="sm-hidden">
+          <h3 class="m-t-0 m-b-0">{{project.title}}</h3>
+          <p class="m-t-offset">
+            <a href={{project.leadLink.url}} target="_blank" rel="noopener noreferrer">{{project.leadLink.title}}</a>
+          </p>
+          <p class="m-t-0">
+            <em>{{project.date}}</em>
+          </p>
+        </div>
 
-    <div class="tags m-t-sm">
-      {{#each project.tags as |tag|}}
-        <span class="tag">{{tag}}</span>
-      {{/each}}
-    </div>
+        {{{project.description}}}
 
-    <p>
-      <strong>Skills / Technologies:</strong>
-      {{#each skills as |skill index|}}
-        {{#if (equals index lastSkillIndex)}}
-          {{skill}}
-        {{else}}
-          {{skill}},
+        <p>
+          <strong>Skills / Technologies:</strong>
+          {{#each skills as |skill index|}}
+            {{#if (equals index lastSkillIndex)}}
+              {{skill}}
+            {{else}} 
+              {{skill}},
+            {{/if}}
+          {{/each}}
+        </p>
+
+        {{#if project.links}}
+          <h4 class="m-b-0">Links:</h4>
+          <ul class="Project-links">
+            {{#each project.links as |link|}}
+              <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
+            {{/each}}
+          </ul>
         {{/if}}
-      {{/each}}
-    </p>
 
-    {{{project.description}}}
-
-    {{#if project.links}}
-      <h4 class="m-b-0">Links:</h4>
-      <ul class="Project-links">
-        {{#each project.links as |link|}}
-          <li><a href={{link.url}} target="_blank" rel="noopener noreferrer">{{link.title}}</a></li>
-        {{/each}}
-      </ul>
-    {{/if}}
-
-    <div class="sm-visible m-t-sm">
-      {{project-images project=project}}
+        <div class="sm-visible m-t-sm">
+          {{project-images project=project}}
+        </div>
+      </div>
     </div>
   </div>
 </div>

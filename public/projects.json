@@ -1,0 +1,181 @@
+{
+  "joblint-extension": {
+    "date": "March 2017",
+    "description": "<p>When I was looking for a new job in the UK, I came across the wonderful <a href=\"https://github.com/rowanmanning/joblint\" target=\"_blank\" rel=\"noopener noreferrer\">Joblint library</a>. Joblint is a small JavaScript library that can run in the browser or via a Command-Line Interface (CLI) to check job listings for issues with sexism, culture, expectations, and recruiter fails.</p><p>Joblint is a handy tool but not very accessible. To run the libary text needed to either be saved to the hard drive or copied to the clipboard before being used in the CLI. Or if they used the website they needed to copy the text and then paste it into the input box provided. Additionally, while tech-savvy people are generally familiar with CL tools, this could be a prohibitive barrier to those not familiar with CL tooling - particularly those in more junior positions.</p><p>The solution I came up with was to build a Chrome extension that would allow me to simply select the text I'd like to check and with a single click display any issues with the job listing. I made a concious effort to make the tool as simple as possible, using existing APIs and extension paradigms.</p><p>This was my first Chrome extension and I found it a fun exercise to work on. It gave me the opportunity to broaden my JavaScript experience, while also creating something useful that made an existing technology more accessible to those who need it. I also now use it whenever considering a job listing.</p>",
+    "leadLink": {
+      "title": "Chrome Extension",
+      "url": "https://chrome.google.com/webstore/detail/joblint/amocmhopdccjmbheafgjicjcbmpogdhm"
+    },
+    "id": "joblint-extension",
+    "leadImage": {
+      "alt": "Joblint Chrome Extension",
+      "src": "../assets/images/projects/joblint-action.gif"
+    },
+    "links": [
+      {
+        "title": "Chrome Extension",
+        "url": "https://chrome.google.com/webstore/detail/joblint/amocmhopdccjmbheafgjicjcbmpogdhm"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/thelucideffect/joblint-chrome/"
+      },
+      {
+        "title": "Product Hunt",
+        "url": "https://www.producthunt.com/posts/joblint-chrome-extension"
+      }
+    ],
+    "order": 3,
+    "skills": [
+      "Git",
+      "Chrome",
+      "JavaScript",
+      "LocalStorage"
+    ],
+    "tags": [
+      "Web Development"
+    ],
+    "title": "Joblint Chrome Extension",
+    "gradient": {
+      "start": "#8016ac",
+      "end": "#bd1b99"
+    }
+  },
+  "lucid-effect-national-tour": {
+    "date": "January 2015 - August 2016",
+    "description": "<p>In 2016, after the release of my single <i>Gretchen Ross</i> I embarked on a solo tour of New Zealand, with fellow musician Emily Riordan in support. Spread over 5 cities, we performed to hundreds of people and travelled all the way from Auckland to Dunedin.</p> <p>Without a label or management, I was responsible for all aspects of organisation the tour including planning, budgeting, marketing, and finally performing. While the tour itself only last 2 and a half weeks, months of preparation went into making sure the tour would be a success.</p> <p>Ultimately despite being our debut tour, our first time performing in the South Island, and being entirely self-organised we were very successful and broke even by tour's end.</p> <iframe src=\"https://open.spotify.com/embed/track/4LuFa1sVKX6l3ET94ohZ8w\" width=\"100%\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\"></iframe>",
+    "leadLink": {
+      "title": "www.thelucideffect.com",
+      "url": "http://www.thelucideffect.com"
+    },
+    "id": "lucid-effect-national-tour",
+    "images": [
+      {
+        "alt": "Performing at The Wine Cellar, Auckland",
+        "src": "../assets/images/projects/national-tour-performing.jpg"
+      },
+      {
+        "alt": "Lucid Effect performing at The Wine Cellar, Auckland",
+        "src": "../assets/images/projects/national-tour-auckland.jpg"
+      }
+    ],
+    "leadImage": {
+      "alt": "Website for the National Tour, designed by Declan Ramsay",
+      "src": "../assets/images/projects/the-lucid-effect-website.png"
+    },
+    "links": [
+      {
+        "title": "Second Hand News",
+        "url": "http://www.secondhandnews.nz/news--reviews/lucid-effect-national-tour"
+      },
+      {
+        "title": "13th Floor",
+        "url": "https://www.13thfloor.co.nz/?p=71593"
+      },
+      {
+        "title": "Muzic.net.nz",
+        "url": "http://www.muzic.net.nz/news/5619/lucid-effect-announces-national-tour.html"
+      },
+      {
+        "title": "Taranaki Daily News",
+        "url": "http://www.stuff.co.nz/taranaki-daily-news/news/82717344/new-plymouth-musician-lucid-effect-sets-sail-for-national-tour"
+      }
+    ],
+    "order": 2,
+    "skills": [
+      "Management",
+      "Planning",
+      "Budgeting",
+      "Advertising",
+      "Performing",
+      "Creativity",
+      "HTML/CSS"
+    ],
+    "tags": [
+      "Event Planning",
+      "Design"
+    ],
+    "title": "Lucid Effect National Tour",
+    "gradient": {
+      "start": "#143244",
+      "end": "#d1c8ab"
+    }
+  },
+  "media-project": {
+    "date": "September 2016 - July 2017",
+    "description": "<p>A thorough redesign and build of TVNZ combined their previously built OnDemand experience and their seperate show information site in to a single platform. I worked extensively throughout the codebase, particularly on their authentication flows, implementing their advertising solution, favouriting, and internal resolution of layout and module information provided by the API.</p> <p>For this project I also lead the team in embracing a style guide enforced by DockYard's <a href=\"https://github.com/DockYard/eslint-plugin-ember-suave\" target=\"_blank\" rel=\"noopener noreferrer\">ember-suave</a> ESLint plugin. Implementing this style meant we had a consistent codebase which was easier to maintain and introduce other developers to. We also used TDD practices in building the internal layout resolution and Advertising.</p>",
+    "leadLink": {
+      "title": "https://www.tvnz.co.nz",
+      "url": "https://www.tvnz.co.nz/"
+    },
+    "id": "media-project",
+    "images": [
+      {
+        "alt": "Episodes view of the TVNZ Single Site",
+        "src": "../assets/images/projects/tvnz-episodes.jpg"
+      }
+    ],
+    "leadImage": {
+      "alt": "TVNZ",
+      "src": "../assets/images/projects/tvnz-homepage.jpg"
+    },
+    "order": 4,
+    "skills": [
+      "Ember",
+      "REST",
+      "JavaScript",
+      "Git",
+      "JIRA",
+      "TDD",
+      "Styleguide",
+      "GPT",
+      "Agile"
+    ],
+    "tags": [
+      "Web Development"
+    ],
+    "title": "TVNZ Single Site",
+    "gradient": {
+      "start": "#000000",
+      "end": "#006AFF"
+    }
+  },
+  "the-co-operative-bank": {
+    "date": "January 2015 - August 2016",
+    "description": "<p>I was a part of the development team for The Co-operative Bank's new online banking platform. Instead of sandboxing the internet banking experience and marketing site, The Co-operative Bank decided on a singular platform, allowing users to see their information without logging in and to traverse freely between their accounts and marketing information. This meant that information on the marketing side could be more targetted to their users' financial situation.</p><p>Working closely with The Co-operative Bank's developers I got to experience many aspects of development and I worked on both their initial release and subsequent feature cycles. I eventually stepped up to a more lead-like role on a number of their flows such as Overdraft and Personal Loan Origination, as well as the Join Us and Change Account flows.</p>",
+    "leadLink": {
+      "title": "https://co-operativebank.co.nz",
+      "url": "https://co-operativebank.co.nz"
+    },
+    "id": "the-co-operative-bank",
+    "images": [
+      {
+        "alt": "Co-operative Bank Personal Loan flow",
+        "src": "../assets/images/projects/co-op-loan.png"
+      }
+    ],
+    "leadImage": {
+      "alt": "The Co-operative Bank",
+      "src": "../assets/images/projects/co-op-tile.jpg"
+    },
+    "order": 1,
+    "skills": [
+      "Ember",
+      "Sass",
+      "REST",
+      "JavaScript",
+      "Git",
+      "Trello",
+      "Sifter",
+      "Agile"
+    ],
+    "tags": [
+      "Web Development"
+    ],
+    "title": "The Co-operative Bank",
+    "gradient": {
+      "start": "#118c3a",
+      "end": "#87c95e"
+    }
+  }
+}

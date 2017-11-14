@@ -1,11 +1,7 @@
-import Ember from 'ember';
+import { get } from '@ember/object';
+import Service from '@ember/service';
+import { resolve } from 'rsvp';
 import injectService from 'ember-service/inject';
-
-const {
-  get,
-  Service,
-  RSVP: { resolve },
-} = Ember;
 
 const endpoints = {
   lastfm: 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=3&user=lucideffective&api_key=45c2ed86bea3e8d841b7d430ba0e605e&format=json',

@@ -1,13 +1,7 @@
-import Ember from 'ember';
+import { get } from '@ember/object';
+import Route from '@ember/routing/route';
+import { hash } from 'rsvp';
 import injectService from 'ember-service/inject';
-
-const {
-  get,
-  Route,
-  RSVP: {
-    hash,
-  },
-} = Ember;
 
 export default Route.extend({
   api: injectService(),

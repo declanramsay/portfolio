@@ -1,34 +1,34 @@
-<div class="Header row">
+<div class="Header">
   <div class="Header-text">
-    <h1>Declan Ramsay</h1>
-    <p>Web Developer and Musician based in London, United Kingdom</p>
+    <div class="container p-t-0">
+      <div class="row middle-xs h-full">
+        <div class="col-sm-6">
+          <h1>Hi, I'm Declan 👋</h1>
+          <p>I love building web applications as part of the team at <a href="https://ig.com" target="_blank" rel="noopener noreferrer nofollow">IG</a> in London. When I'm not sharpening my JavaScript skills, you'll find me playing Quidditch for the <a href="https://www.facebook.com/UnspeakablesLDN/" rel="noopener noreferrer nofollow">London Unbreakables</a>, or making music as <a href="http://thelucideffect.com"  target="_blank" rel="noopener noreferrer nofollow">Lucid Effect</a>. Check out a sample of my work below.</p>
+          <ul class="LinkList">
+            <li><a href="https://twitter.com/thelucideffect" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li><a href="https://github.com/thelucideffect" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-github fa-lg"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/declandr/" target="_blank" rel="noopener noreferrer nofollow"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Header-mask"></div>
+  <div class="Header-image">
   </div>
 </div>
+
+{{project-list
+  projects=model.projects
+}}
 
 <div class="container content">
-  <div class="Profile row middle-xs center-xs m-b-sm">
-    <div class="col-xs-2">
-      <img src="assets/images/my-sprite-l.gif" alt="Sprite of Declan" class="responsive--max">
-    </div>
-
-    <div class="col-xs-8">
-      <p>Hi, I'm Declan. Developer, Musician, and General Dork, I'm passionate about all things web. I love building exciting and useful web applications that are beautiful both in form and function.</p>
-    </div>
-
-    <div class="col-xs-2">
-      <img src="assets/images/my-sprite.gif" alt="Sprite of Declan" class="responsive--max">
-    </div>
-  </div>
-
-  {{project-list
-    projects=model.projects
-  }}
-
   {{about-me}}
-
-  {{social-list
-    recentTracks=model.recentTracks
-    run=model.run
-    reading=model.reading
-  }}
 </div>
+
+{{social-list
+  recentTracks=model.recentTracks
+  run=model.run
+  reading=model.reading
+}}
