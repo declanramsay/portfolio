@@ -8,7 +8,7 @@ const endpoints = {
   zombies: 'https://api.zombiesrungame.com/runs/11464889/',
   instagram: 'https://api.instagram.com/v1/users/1351380575/media/recent/?access_token=1351380575.bf6a840.ba968d7f9d0940c2be6dc06e0a7efe06',
   twitter: 'https://us-central1-personal-portfolio-b7670.cloudfunctions.net/twitterFeed',
-  github: 'https://api.github.com/users/thelucideffect/events/public',
+  github: 'https://api.github.com/users/declanramsay/events/public',
 };
 
 export default Service.extend({

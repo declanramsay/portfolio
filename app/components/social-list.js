@@ -83,7 +83,7 @@ export default Component.extend({
     // return twitter;
     return twitter.map((t) => {
       let { text } = t;
-      let link = `https://twitter.com/thelucideffect/status/${t.id_str}`;
+      let link = `https://twitter.com/declanramsay_/status/${t.id_str}`;
       return { text, link };
     });
   }),
